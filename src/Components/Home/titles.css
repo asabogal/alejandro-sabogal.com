@@ -1,0 +1,21 @@
+.title-top {
+  font-size: 30px;
+  width: 100%;
+}
+
+.title-center {
+  font-size: 80px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.home-container {
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+@media (max-width: 600px) {
+  [class*=".home-container"] {
+    max-width: 80%;
+  }
+}
