@@ -21,7 +21,6 @@ const Footer = () => {
       <a href="http://www.linkedin.com/in/alejandro-sabogal-dev" target="_blank">
       <img className="footer-icon" src={linkedin}></img>
       </a>
-        
     </div>
   );
 };
