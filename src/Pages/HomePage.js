@@ -1,14 +1,14 @@
 import React from 'react';
 import Footer from '../Components/Footer/Footer'
+import Titles from '../Components/Home/Titles'
 
-const Home = () => {
+const HomePage= () => {
   return (
     <div className="App">
-      ALEJANDRO SABOGAL
-      full stack web developer 
+      <Titles/> 
       <Footer/>
   </div>
   );
 };
 
-export default Home;
+export default HomePage;
