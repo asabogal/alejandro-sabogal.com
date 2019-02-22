@@ -1,15 +1,16 @@
 import React from 'react';
-import './titles.css'
-import { titleTop, titleCenter } from './styles'
+import { titleTop, titleCenter, animations } from './styles'
 import Radium from 'radium';
 
 const Titles = () => {
 
   return (
     <div>
-      <h4 style={titleTop}>ALEJANDRO SABOGAL</h4>
-      <h1 style={titleCenter}>FULL STACK<br></br> DEVELOPER</h1>
-      <h4>JavaScript | React | Ruby | Rails</h4>
+      <p style={[titleTop, animations.expandTitle]}>ALEJANDRO SABOGAL</p>
+      <div style={animations.fadeTitle}>
+        <h1 style={[titleCenter]}>FULL STACK<br></br> DEVELOPER</h1>
+        <h4>JavaScript | React | Ruby | Rails</h4>
+      </div>
     </div>
   );
 };
