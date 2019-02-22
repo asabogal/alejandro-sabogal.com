@@ -1,17 +1,19 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
-
+import Radium, { StyleRoot } from 'radium';
 
 const Router = () => {
 
   return (
-    <BrowserRouter>
-      <Switch>
-      <Route exact path= '/' component={HomePage}/>
-      </Switch>
-    </BrowserRouter>
+    <StyleRoot>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path= '/' component={HomePage}/>
+        </Switch>
+      </BrowserRouter>
+    </StyleRoot>
  )
 }
 
-export default Router;
+export default Radium(Router);

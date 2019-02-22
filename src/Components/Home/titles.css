@@ -1,12 +1,15 @@
 .title-top {
   font-size: 30px;
   width: 100%;
+  font-weight: 200;
 }
 
 .title-center {
   font-size: 80px;
   font-weight: 500;
   width: 100%;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .home-container {
@@ -18,4 +21,10 @@
   [class*=".home-container"] {
     max-width: 80%;
   }
+}
+
+@media (max-width: 700px) {
+  [class*=".text-center"]{
+    font-size: 1.6rem;
+  } 
 }
