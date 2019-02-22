@@ -1,13 +1,14 @@
 import React from 'react';
 import navIcon from './Icons/arrowDown.png'
-import { navHeader } from './styles'
+import { navHeader, animations } from './styles'
+import Radium from 'radium'
 
 const NavHeader = () => {
   return (
-    <div style={navHeader.header}>
+    <div style={[navHeader.header, animations.fadeIcon]}>
       <img style={navHeader.button} src={navIcon}/>
     </div>
   );
 };
 
-export default NavHeader;
+export default Radium(NavHeader);
