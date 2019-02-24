@@ -16,7 +16,7 @@ export const button = {
   padding: '1em',
 };
 
-export const fadeDown = Radium.keyframes({
+const fadeDown = Radium.keyframes({
   '0%': {
     opacity: 0,
     transform: 'translateY(0%)'
@@ -30,6 +30,15 @@ export const fadeDown = Radium.keyframes({
   }
 });
 
+const fadeIn = Radium.keyframes({
+  '0%': {
+    opacity: 0,
+  },
+  '100%': {
+    opacity: 1,
+  }
+});
+
 export const animations = {
   fadeIcon: {
     opacity: 0,
@@ -37,16 +46,40 @@ export const animations = {
     animationName: fadeDown,
     animationDelay: '3s',
     transform: 'translateY(20%)'
+  },
+  fadeHome: {
+    opacity: 0,
+    animation: '1s ease 1s forwards',
+    animationName: fadeIn,
+    animationDelay: '.2s',
+  },
+  fadeAbout: {
+    opacity: 0,
+    animation: '1s ease 1s forwards',
+    animationName: fadeIn,
+    animationDelay: '.3s',
+  },
+  fadePortfolio: {
+    opacity: 0,
+    animation: '1s ease 1s forwards',
+    animationName: fadeIn,
+    animationDelay: '.4s',
+  },
+  fadeResume: {
+    opacity: 0,
+    animation: '1s ease 1s forwards',
+    animationName: fadeIn,
+    animationDelay: '.5s',
+  },
+  fadeContact: {
+    opacity: 0,
+    animation: '1s ease 1s forwards',
+    animationName: fadeIn,
+    animationDelay: '.6s',
   }
 };
 
 // NAV MENU //
 
-// export const menuItems = {
-//   item: {
-//     fontSize: '4rem',
-//     opacity: 0,
-//     textShadow: '2px 2px #000',
-//     margin: 0,
-//     padding: 0
-// }
+
+
