@@ -1,10 +1,16 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap'
+import About from '../Components/About/About'
+import NavHeader from '../Components/Navigation/NavHeader'
+import Footer from '../Components/Footer/Footer'
+import './pages.css'
+
 
 const AboutPage = () => {
   return (
-    <div>
-    
+    <div className="about-page">
+      <NavHeader/>
+      <About/>
+      <Footer/>
     </div>
     
   );
