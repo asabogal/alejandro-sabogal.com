@@ -37,7 +37,6 @@ export const fadeUp = Radium.keyframes({
 
 export const expand = Radium.keyframes({
   '0%': {
-    color: '#1E4051',
     marginBottom: '-30px',
   },
   '30%': {
