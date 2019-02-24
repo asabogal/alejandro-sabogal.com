@@ -1,6 +1,6 @@
 .home-page {
   height: 90vh;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 }
