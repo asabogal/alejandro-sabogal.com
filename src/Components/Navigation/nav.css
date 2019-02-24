@@ -21,7 +21,7 @@
 }
 
 .overlay a {
-  padding: 15px;
+  padding: 8px;
   text-decoration: none;
   font-size: 50px;
   font-weight: bold;
@@ -29,12 +29,11 @@
   color: #d6dbdb;
   display: block;
   transition: 0.3s;
-  /* opacity: 0; */
 }
 
 .overlay a:hover, .overlay a:focus {
   color: #ffffff;
-  transform: scale(1.1)
+  transform: scale(1.03)
 }
 
 @media screen and (max-height: 450px) {
@@ -45,3 +44,22 @@
   right: 35px;
   }
 }
+
+/*  NAV MENU */
+
+/* @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+};
+
+
+.home-link {
+  opacity: 0;
+  animation: 1s ease 1s forwards;
+  animation-name: fadeIn;
+  animation-delay: .2s;
+} */
