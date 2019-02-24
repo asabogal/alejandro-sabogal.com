@@ -1,16 +1,14 @@
 import Radium from 'radium'
+
+// HEADER //
 export const header = {
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  height: '100px',
-  width: '100%',
-  display: 'flex',
+  display: 'grid',
   alignItems: 'center',
   justifyContent: 'center',
-  zIndex: 1,
+  zIndex: 999,
 };
 
+// BUTTON //
 export const button = {
   margin: '0 10px',
   height: '40px',
@@ -41,3 +39,14 @@ export const animations = {
     transform: 'translateY(20%)'
   }
 };
+
+// NAV MENU //
+
+// export const menuItems = {
+//   item: {
+//     fontSize: '4rem',
+//     opacity: 0,
+//     textShadow: '2px 2px #000',
+//     margin: 0,
+//     padding: 0
+// }

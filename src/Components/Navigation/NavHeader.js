@@ -1,8 +1,9 @@
 import React from 'react';
-import { header, animations } from './styles'
+import { header } from './styles'
 import Radium from 'radium'
 import NavMenu from './NavMenu'
 import NavButton from './NavButton'
+import './nav.css'
 
 class NavHeader extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class NavHeader extends React.Component {
   render() {
 
     return (
-      <div style={[header, animations.fadeIcon]}>
+      <div style={header}>
         {this.renderMenu()}
       </div>
     );

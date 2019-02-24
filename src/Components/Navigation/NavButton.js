@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { button } from './styles'
+import { button, animations } from './styles'
 import navIcon from './Icons/arrowDown.png'
 import Radium from 'radium'
  
@@ -17,7 +17,7 @@ class NavButton extends Component {
   render() {
     return (
       <div>
-        <img style={button} src={navIcon} onClick={this.handleClick}/>
+        <img style={[button, animations.fadeIcon]} src={navIcon} onClick={this.handleClick}/>
       </div>
     );
   }
