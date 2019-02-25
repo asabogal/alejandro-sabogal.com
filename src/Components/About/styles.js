@@ -30,7 +30,7 @@ export const pic = {
   padding: '6px 0px',
   borderRadius: '175px',
   boderColor: 'blue',
-  opacity: '0.8'
+  opacity: '0.9'
 };
 
 export const textContainer = {
