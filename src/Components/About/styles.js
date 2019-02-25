@@ -2,14 +2,26 @@ export const pageContainer = {
   display: 'grid',
   gridTemplateColumns: 'auto',
   gridAutoRows: 'auto'
-}
+};
 
 export const pictureContainer = {
   display: 'grid',
   alignItems: 'center',
   justifyContent: 'center',
-  gridTemplateColumns: 'auto',
-  gridAutoRows: 'auto'
+  gridTemplateColumns: 'auto'
+};
+
+export const iconsContainer = {
+  display: 'grid',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gridTemplateColumns: 'auto auto auto auto',
+  gridColumnGap: '2em',
+  padding: '40px',
+  textAlign: 'center',
+  '@media (max-width: 750px)': {
+    gridTemplateColumns: 'auto auto'
+  }
 };
 
 export const pic = {
@@ -36,7 +48,7 @@ export const textContainer = {
 export const bigText = {
   fontSize: '30px',
   fontWeight: '800',
-  textAlign: 'right',
+  textAlign: 'left',
   '@media (max-width: 500px)': {
     textAlign: 'left'
   }
