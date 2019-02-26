@@ -1,0 +1,11 @@
+.resume-container {
+  display: grid;
+  justify-items: center;
+  height: 1000px;
+}
+
+.resume {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
