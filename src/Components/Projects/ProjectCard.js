@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
             <div className="card-content">
             <p>{description}</p>  
             <p className="tools">{tools}</p>
-            <br></br>
+          
             <button className="btn-circle" onClick={handleClick}>View App</button>
             <br></br>
             <br></br>

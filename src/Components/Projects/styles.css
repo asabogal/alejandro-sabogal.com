@@ -12,6 +12,7 @@
 } 
 
 .card-overlay {
+  display: grid;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -36,7 +37,7 @@
 .card-content {
   display: grid;
   grid-template-columns: auto;
-  grid-auto-rows: auto auto auto auto;
+  grid-template-rows: 25%;
   color: #d6dbdb;
   font-size: 20px;
   font-weight: 500;
@@ -47,13 +48,15 @@
 }
 
 .tools {
-  font-size: 18px;
+  display: grid;
+  font-size: 15px;
   font-weight: 300; 
 }
 
 
 .btn-circle {
-  background-color: rgb(220, 221, 221);
+  display: grid;
+  background-color: rgb(171, 241, 241);
   width: 100px;
   height: 100px;
   padding: 6px 0px;
@@ -63,5 +66,56 @@
   line-height: 1.42857;
 }
 
+.btn-circle:hover {
+  transform: scale(1.03)
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+  .card-content {
+    grid-template-columns: auto;
+    grid-auto-rows: auto auto auto auto;
+    color: #d6dbdb;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 18px;
+  }
+  .tools {
+    display: grid;
+    font-size: 15px;
+    font-weight: 300; 
+  }
+}
 
 
+@media all and (max-width: 480px) and (min-width: 200px) {
+  .btn-circle {
+    background-color: rgb(171, 241, 241);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .tools {
+    display: grid;
+    font-size: 12px;
+    font-weight: 300; 
+  }
+}
+
+@media all and (max-width: 480px) and (min-width: 200px) {
+  .btn-circle {
+    background-color: rgb(171, 241, 241);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 15px;
+  }
+}

@@ -9,8 +9,9 @@ export const projectsContainer = {
   paddingRight: '80px',
   paddingBottom: '40px',
   textAlign: 'center',
-  '@media (max-width: 750px)': {
+  '@media (max-width: 1000px)': {
     gridTemplateColumns: 'auto'
+    
   }
 };
 
