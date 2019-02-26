@@ -33,19 +33,27 @@
   box-shadow: .125em .125em .625em rgba(0, 0, 0, 0.5);
 }
 
-.text {
+.card-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: auto auto auto auto;
   color: #d6dbdb;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-  transform: translate(-50%, -50%);
+  font-weight: 500;
+  align-items: center;
+  justify-items: center;
   text-align: center;
+  padding: 10px;
 }
 
+.tools {
+  font-size: 18px;
+  font-weight: 300; 
+}
+
+
 .btn-circle {
+  background-color: rgb(220, 221, 221);
   width: 100px;
   height: 100px;
   padding: 6px 0px;
@@ -54,4 +62,6 @@
   font-size: 20px;
   line-height: 1.42857;
 }
+
+
 

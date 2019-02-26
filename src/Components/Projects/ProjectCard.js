@@ -15,13 +15,11 @@ const ProjectCard = (props) => {
         <h3>{name}</h3>
         <img className="project-img" src={image}/>
           <div className="card-overlay">
-            <div className="text">
-            <h5>{description}</h5>
+            <div className="card-content">
+            <p>{description}</p>  
+            <p className="tools">{tools}</p>
             <br></br>
-            <h6>{tools}</h6>
-            <br></br>
-            <hr></hr>
-            <button className="btn-circle btn-xl" outline color="info" onClick={handleClick}>View App</button>
+            <button className="btn-circle" onClick={handleClick}>View App</button>
             <br></br>
             <br></br>
             <a className="App-link" style={{fontSize: '16px'}} href={repoLink}>Repo</a>
