@@ -15,5 +15,6 @@ export const projectsContainer = {
 };
 
 export const heading = {
-  
+  textAlign: 'center', 
+  fontWeight: 200,  
 };

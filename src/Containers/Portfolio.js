@@ -1,10 +1,10 @@
 import React from 'react';
 import ProjectCard from '../Components/Projects/ProjectCard'
 import { projectData } from '../Data/projectData'
-import { projectsContainer } from './styles'
+import { projectsContainer, heading } from './styles'
 import Radium from 'radium'
 
-class Projects extends React.Component {
+class Portfolio extends React.Component {
 
   state = {  }
 
@@ -20,14 +20,14 @@ class Projects extends React.Component {
       
     return (
      <div>
-       <h1 style={{textAlign: 'left', fontWeight: 200}}>PERSONAL PROJECTS</h1>
-      <div style={projectsContainer}>
-       {renderProjects}
-      </div>
+       <h1 style={heading}>PERSONAL PROJECTS</h1>
+        <div style={projectsContainer}>
+         {renderProjects}
+        </div>
     </div>
       
     );
   }
 }
 
-export default Radium(Projects);
+export default Radium(Portfolio);
