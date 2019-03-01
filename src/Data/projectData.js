@@ -25,7 +25,7 @@ export const projectData = [
   {
     id: 3,
     name: "UEFA Schedules",
-    description: "Get previous, future, and up to the minute European league soccer matches.",
+    description: "Get previous, future, and up to the minute European soccer legue schedules.",
     tools: 'Javascript, JQuery, Ruby on Rails, Bootstrap',
     repoLink: "https://github.com/asabogal/UEFA-schedules",
     image: uefa_schedules,

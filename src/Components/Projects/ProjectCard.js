@@ -1,5 +1,4 @@
 import React from 'react';
-// import { projectCard, projectImg, cardOverlay, text, btnCircle } from './styles'
 import './styles.css'
 
 const ProjectCard = (props) => {
