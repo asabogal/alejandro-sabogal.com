@@ -4,6 +4,7 @@ import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
 import PortfolioPage from './Pages/PortfolioPage'
 import ResumePage from './Pages/ResumePage'
+import PageNotFound from './Pages/PageNotFound'
 import Radium, { StyleRoot } from 'radium';
 
 const Router = () => {
@@ -16,6 +17,7 @@ const Router = () => {
           <Route exact path= '/about' component={AboutPage}/>
           <Route exact path= '/portfolio' component={PortfolioPage}/>
           <Route exact path= '/resume' component={ResumePage}/>
+          <Route component={PageNotFound}/>
         </Switch>
       </BrowserRouter>
     </StyleRoot>
