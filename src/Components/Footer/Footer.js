@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <div style={footerDiv}className="footer">
       
-      <a href="mailto:asabogal.dev@gmail.com" target="_blank">
-      <img style={footerIcon} src={email}></img>
+      <a href="mailto:asabogal.dev@gmail.com">
+      <img style={footerIcon} alt="contact me" src={email}></img>
       </a>
 
       <a href="https://github.com/asabogal" target="_blank">
