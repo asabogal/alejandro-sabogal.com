@@ -24,7 +24,7 @@
   padding: 8px;
   text-decoration: none;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 200;
   text-shadow: 3px 3px #013961;
   color: #d6dbdb;
   display: block;
@@ -44,22 +44,3 @@
   right: 35px;
   }
 }
-
-/*  NAV MENU */
-
-/* @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-};
-
-
-.home-link {
-  opacity: 0;
-  animation: 1s ease 1s forwards;
-  animation-name: fadeIn;
-  animation-delay: .2s;
-} */

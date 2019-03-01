@@ -20,17 +20,6 @@ const handleClick = () => {
         <a style={animations.fadeContact}> <Link to="/contact">CONTACT</Link> </a>
       </div>
     </div>
-
-    // <div className="overlay" onClick={handleClick}>
-    //   <div className="overlay-content">
-    //     <Link className="home-link" to="/">HOME</Link> 
-    //     <Link to="/about">ABOUT</Link> 
-    //     <Link to="/portfolio">PORTFOLIO</Link> 
-    //     <Link to="/resume">RESUME</Link> 
-    //     <Link to="/contact">CONTACT</Link> 
-    //   </div>
-    // </div>
-
   );
 };
 
