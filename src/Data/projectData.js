@@ -14,19 +14,19 @@ export const projectData = [
     url: 'https://www.youtube.com/watch?v=nwtz3w8ToMg'
   },
   {
-    id: 2,
+    id: 3,
     name: "Record Box Reviews",
     description: "Record collection organizer and reviewer app, stores, shares and reviews user vinyl records.",
     tools: 'Ruby on Rails, Bootstrap',
     repoLink: "https://github.com/asabogal/recordbox-reviews",
     image: recordbox_reviews,
-    url: 'https://www.youtube.com/watch?v=CHqRyEE8Jeg'
+    url: 'https://recordbox-reviews.herokuapp.com/'
   },
   {
-    id: 3,
+    id: 2,
     name: "UEFA Schedules",
     description: "Get previous, future, and up to the minute European soccer legue schedules.",
-    tools: 'Javascript, JQuery, Ruby on Rails, Bootstrap',
+    tools: 'Javascript, JQuery, Ruby on Rails',
     repoLink: "https://github.com/asabogal/UEFA-schedules",
     image: uefa_schedules,
     url: 'https://www.youtube.com/watch?v=73hkA9pLtJg'
