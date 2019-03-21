@@ -4,6 +4,7 @@ import uefa_schedules from './projectImages/uefa_schedules.jpg'
 import interval_training_timer from './projectImages/interval_training_timer.jpg'
 
 export const projectData = [
+  
   {
     id: 1,
     name: "DJ Charts",
