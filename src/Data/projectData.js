@@ -29,7 +29,7 @@ export const projectData = [
     tools: 'Javascript, JQuery, Ruby on Rails',
     repoLink: "https://github.com/asabogal/UEFA-schedules",
     image: uefa_schedules,
-    url: 'https://www.youtube.com/watch?v=73hkA9pLtJg'
+    url: 'https://uefa-schedules.herokuapp.com/'
   },
   {
     id: 4,
@@ -38,6 +38,6 @@ export const projectData = [
     tools: 'React, Redux, Javascript, Ruby on Rails, React-strap',
     repoLink: "https://github.com/asabogal/interval-training-timer",
     image: interval_training_timer,
-    url: 'https://www.youtube.com/watch?v=vNy4p2KSsEI'
+    url: 'https://interval-training-timer.herokuapp.com/'
   }
 ]
