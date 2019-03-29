@@ -5,9 +5,10 @@ export const titleTop = {
   width: '100%',
   fontWeight: '200',
   letterSpacing: '10px',
-  '@media (max-width: 700px)': {
-    fontSize: '0.9rem',
-    fontWeight: '400'
+  '@media (max-width: 720px)': {
+    fontSize: '1.4rem',
+    fontWeight: '300',
+    letterSpacing: '8px',
     }
 }
 
@@ -59,7 +60,10 @@ export const animations = {
   },
   expandTitle: {
     animation: 'all 3s 1',
-    animationName: expand
+    animationName: expand,
+    '@media (max-width: 620px)': {
+      animationName: fadeUp
+      }
   }
 };
 
