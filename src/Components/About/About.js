@@ -17,7 +17,7 @@ const About = () => {
 
       <div style={textContainer}>
         <h1 style={bigText}>Hello! I am Alejandro, a Web and Applications Developer based in New York City.</h1>
-        <p style={smallText}>I love programming just as much as I love making music. Both can be beautiful and complex, and I enjoy expressing my creativity when writing both. I'm proficient in Ruby, JavaScript and React, and enjoy building efficient and useful applications. I have professional experience in other fields; Finance, Hospitality and, Entrepreneurship. </p>
+        <p style={smallText}>I love programming just as much as I love making music. Both can be beautiful and complex, and I enjoy expressing my creativity when writing both. I'm proficient in Ruby, JavaScript and React, and enjoy building efficient and useful applications. I have professional experience in other fields; Finance, Entrepreneurship, and Audio Engineering. </p>
       </div>   
 
     <div>
