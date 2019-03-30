@@ -5,12 +5,18 @@ import AboutPage from './Pages/AboutPage'
 import PortfolioPage from './Pages/PortfolioPage'
 import ResumePage from './Pages/ResumePage'
 import PageNotFound from './Pages/PageNotFound'
+import Helmet from 'react-helmet'
 import Radium, { StyleRoot } from 'radium';
 
 const Router = () => {
 
   return (
     <StyleRoot>
+      <Helmet>
+        <title>Alejandro Sabogal</title>
+        <meta name="description" content="My Personal Portfolio Site" />
+        <meta name="keywords" cpntent="alejandro, sabogal, alejandro sabogal, web developer, full stack, full-stack, developer, portfolio" />
+      </Helmet>
       <HashRouter basename='/'>
         <Switch>
           <Route exact path= '/' component={HomePage}/>
