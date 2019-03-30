@@ -27,7 +27,7 @@ export const projectData = [
     id: 2,
     name: "UEFA Schedules",
     description: "Get previous, future, and up to the minute European soccer legue schedules.",
-    tools: 'Javascript, JQuery, Ruby on Rails',
+    tools: 'Javascript, JQuery, Ruby on Rails, External & Rails API',
     repoLink: "https://github.com/asabogal/UEFA-schedules",
     image: uefa_schedules,
     url: 'https://uefa-schedules.herokuapp.com/'
