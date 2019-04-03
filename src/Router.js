@@ -6,6 +6,7 @@ import PortfolioPage from './Pages/PortfolioPage'
 import ResumePage from './Pages/ResumePage'
 import PageNotFound from './Pages/PageNotFound'
 import Helmet from 'react-helmet'
+import 'babel-polyfill'
 import Radium, { StyleRoot } from 'radium';
 
 const Router = () => {
@@ -15,7 +16,7 @@ const Router = () => {
       <Helmet>
         <title>Alejandro Sabogal</title>
         <meta name="description" content="My Personal Portfolio Site" />
-        <meta name="keywords" cpntent="alejandro, sabogal, alejandro sabogal, web developer, full stack, full-stack, developer, portfolio" />
+        <meta name="keywords" cpntent="alejandro, sabogal, alejandro sabogal, web developer, full stack developer, full-stack developer, full stack, full-stack, developer, portfolio" />
       </Helmet>
       <HashRouter basename='/'>
         <Switch>
