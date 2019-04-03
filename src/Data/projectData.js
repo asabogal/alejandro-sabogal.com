@@ -18,7 +18,7 @@ export const projectData = [
     id: 3,
     name: "Record Box Reviews",
     description: "Record collection organizer and reviewer app, stores, shares and reviews user vinyl records.",
-    tools: 'Ruby on Rails, Bootstrap',
+    tools: 'Ruby on Rails, Bootstrap, HTML, CSS, Google Cloud Platform',
     repoLink: "https://github.com/asabogal/recordbox-reviews",
     image: recordbox_reviews,
     url: 'https://recordbox-reviews.herokuapp.com/'
