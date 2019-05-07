@@ -17,7 +17,7 @@ const handleClick = () => {
         <a style={animations.fadeAbout}> <Link to="/about">ABOUT</Link> </a>
         <a style={animations.fadePortfolio}> <Link to="/portfolio">PORTFOLIO</Link> </a>
         <a style={animations.fadeResume}> <Link to="/resume">RESUME</Link> </a>
-        <a style={animations.fadeContact} href="https://medium.com/@asabogal">MEDIUM</a>
+        <a style={animations.fadeContact} href="https://medium.com/@asabogal">BLOG</a>
       </div>
     </div>
   );
