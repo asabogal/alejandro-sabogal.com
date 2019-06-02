@@ -1,9 +1,9 @@
 import pig_game from './projectImages/pig-game.png'
 
-export const excerciseData = [
+export const excercisesData = [
   {
     id: 1,
-    name: "JavaScrip Pig-Game",
+    name: "JavaScript Pig-Game",
     description: "Dice Pig Game. An excercise in DOM Manipulation based on Jonas Schmedtmann's course.",
     tools: "Vanilla JavaScript, HTML5, CSS3",
     repoLink: "https://github.com/asabogal/pig-game",

@@ -2,6 +2,7 @@ import React from 'react';
 import NavHeader from '../Components/Navigation/NavHeader'
 import Footer from '../Components/Footer/Footer'
 import Portfolio from '../Containers/Portfolio'
+import Excercises from '../Containers/Excercises'
 
 const PortfolioPage = () => {
 
@@ -9,6 +10,7 @@ const PortfolioPage = () => {
     <div >
       <NavHeader/>
       <Portfolio/>
+      <Excercises/>
       <Footer/>
     </div>
       

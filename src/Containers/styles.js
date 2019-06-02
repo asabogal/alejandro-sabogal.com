@@ -19,3 +19,7 @@ export const heading = {
   textAlign: 'center', 
   fontWeight: 200,  
 };
+
+export const description = {
+  textAlign: 'center'
+}
