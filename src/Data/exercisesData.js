@@ -1,6 +1,6 @@
 import pig_game from './projectImages/pig-game.png'
 
-export const excercisesData = [
+export const exercisesData = [
   {
     id: 1,
     name: "JavaScript Pig-Game",

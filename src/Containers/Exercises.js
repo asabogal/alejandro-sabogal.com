@@ -1,12 +1,12 @@
 import React from 'react';
 import ProjectCard from '../Components/Projects/ProjectCard'
-import { excercisesData } from '../Data/excercisesData'
+import { exercisesData } from '../Data/exercisesData'
 import { projectsContainer, heading, description } from './styles'
 import Radium from 'radium'
 
-const Excercises = () => {
+const Exercises = () => {
 
-  let sorted = excercisesData.sort((a, b) => (a.id > b.id) ? -1 : 1)
+  let sorted = exercisesData.sort((a, b) => (a.id > b.id) ? -1 : 1)
   console.log(sorted)
 
   const renderProjects = sorted.map(project => {
@@ -17,7 +17,7 @@ const Excercises = () => {
   })
   return (
     <div>
-       <h1 style={heading}>EXCERCISES</h1>
+       <h1 style={heading}>EXERCISES</h1>
        <p style={description}>A collection of small web applications intended to practice fundamental and advanced web development skills</p>
         <div style={projectsContainer}>
          {renderProjects}
@@ -26,4 +26,4 @@ const Excercises = () => {
   );
 };
 
-export default Radium(Excercises);
+export default Radium(Exercises);
