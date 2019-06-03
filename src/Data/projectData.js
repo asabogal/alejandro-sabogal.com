@@ -1,7 +1,7 @@
-import dj_charts from './projectImages/dj-charts.jpg'
-import recordbox_reviews from './projectImages/recordbox_reviews.jpg'
-import uefa_schedules from './projectImages/uefa_schedules.jpg'
-import interval_training_timer from './projectImages/interval_training_timer.jpg'
+import dj_charts from './projectImages/dj-charts.png'
+import recordbox_reviews from './projectImages/recordbox_reviews.png'
+import uefa_schedules from './projectImages/uefa_schedules.png'
+import interval_training_timer from './projectImages/interval_training_timer.png'
 
 export const projectData = [
   
