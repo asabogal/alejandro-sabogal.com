@@ -11,6 +11,11 @@ export const pictureContainer = {
   gridTemplateColumns: 'auto'
 };
 
+export const header = {
+  textAlign: 'center',
+  color: '#afb9b9'
+}
+
 export const iconsContainer = {
   display: 'grid',
   alignItems: 'center',
