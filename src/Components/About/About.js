@@ -4,7 +4,13 @@ import gradeA from './Images/gradeA.png'
 import practical from './Images/practical.png'
 import precision from './Images/precision.png'
 import passion from './Images/passion.png'
-import { pageContainer, pictureContainer, pic, header, textContainer, bigText, smallText, iconsContainer } from './styles'
+import ruby from './Images/ruby.png'
+import rails from './Images/rails.png'
+import react from './Images/react.png'
+import js from './Images/js.png'
+import html5 from './Images/html5.png'
+import css3 from './Images/css3.png'
+import { pageContainer, pictureContainer, pic, header, textContainer, bigText, smallText, iconsContainer, iconsContainer2 } from './styles'
 import Radium from 'radium'
 
 const About = () => {
@@ -24,35 +30,64 @@ const About = () => {
         <h1 style={header}>What I Build</h1>
       </div>
 
-    <div>
-
-    </div>
-
     <div style={iconsContainer}>
        <div>
-          <img src={gradeA}></img> <br></br>
+          <img src={gradeA}></img> 
           <p>Quality Applications</p>
         </div>
 
         <div>
-          <img src={practical}></img> <br></br>
+          <img src={practical}></img> 
           <p>Practical and Efficient</p>
         </div>
 
         <div>
-          <img src={precision}></img> <br></br>
+          <img src={precision}></img> 
           <p>Precise and Modern Code</p>
         </div>
 
         <div>
-          <img src={passion}></img> <br></br>
+          <img src={passion}></img> 
           <p>Built with Passion</p>
         </div>
     </div>
 
     <div>
-        <h1 style={header}>Technologies and Skills I Use</h1>
-      </div>    
+      <h1 style={header}>Technologies and Skills I Use</h1>
+    </div>    
+
+    <div style={iconsContainer2}>
+      <div>
+        <img src={js}></img> 
+        <p>JavaScript</p>
+      </div>
+
+      <div>
+          <img src={react}></img> 
+          <p>React.js</p>
+        </div>
+
+       <div>
+          <img src={ruby}></img> 
+          <p>Ruby</p>
+        </div>
+
+        <div>
+          <img src={rails}></img> 
+          <p>Rails</p>
+        </div>
+
+        <div>
+          <img src={html5}></img> 
+          <p>HTML5</p>
+        </div>
+
+        <div>
+          <img src={css3}></img> 
+          <p>CSS3</p>
+        </div>
+       
+    </div>
 
     </div>
     

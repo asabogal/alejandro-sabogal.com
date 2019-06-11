@@ -29,6 +29,19 @@ export const iconsContainer = {
   }
 };
 
+export const iconsContainer2 = {
+  display: 'grid',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gridTemplateColumns: 'auto auto auto auto auto auto',
+  gridColumnGap: '2em',
+  padding: '40px',
+  textAlign: 'center',
+  '@media (max-width: 750px)': {
+    gridTemplateColumns: 'auto auto'
+  }
+};
+
 export const pic = {
   width: '250px',
   height: '250px',
