@@ -22,7 +22,7 @@ export const iconsContainer = {
   justifyContent: 'center',
   gridTemplateColumns: 'auto auto auto auto',
   gridColumnGap: '2em',
-  padding: '40px',
+  padding: '20px',
   textAlign: 'center',
   '@media (max-width: 750px)': {
     gridTemplateColumns: 'auto auto'
@@ -35,7 +35,7 @@ export const iconsContainer2 = {
   justifyContent: 'center',
   gridTemplateColumns: 'auto auto auto auto auto auto',
   gridColumnGap: '2em',
-  padding: '40px',
+  padding: '20px',
   textAlign: 'center',
   '@media (max-width: 750px)': {
     gridTemplateColumns: 'auto auto'
