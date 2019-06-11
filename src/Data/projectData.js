@@ -12,7 +12,8 @@ export const projectData = [
     tools: 'Sinatra, Ruby, HTML, CSS',
     repoLink: "https://github.com/asabogal/dj-charts-sinatra-app",
     image: dj_charts,
-    url: 'https://www.youtube.com/watch?v=nwtz3w8ToMg'
+    url: 'https://www.youtube.com/watch?v=nwtz3w8ToMg',
+    video: 'https://www.youtube.com/watch?v=nwtz3w8ToMg'
   },
   {
     id: 3,
@@ -21,7 +22,8 @@ export const projectData = [
     tools: 'Ruby on Rails, Bootstrap, HTML, CSS, Google Cloud Platform',
     repoLink: "https://github.com/asabogal/recordbox-reviews",
     image: recordbox_reviews,
-    url: 'https://recordbox-reviews.herokuapp.com/'
+    url: 'https://recordbox-reviews.herokuapp.com/',
+    video: 'https://youtu.be/CHqRyEE8Jeg'
   },
   {
     id: 2,
@@ -30,7 +32,8 @@ export const projectData = [
     tools: 'Javascript, JQuery, Ruby on Rails, External & Rails API',
     repoLink: "https://github.com/asabogal/UEFA-schedules",
     image: uefa_schedules,
-    url: 'https://uefa-schedules.herokuapp.com/'
+    url: 'https://uefa-schedules.herokuapp.com/',
+    video: 'https://youtu.be/73hkA9pLtJg'
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ export const projectData = [
     tools: 'React, Redux, Javascript, Ruby on Rails, React-strap',
     repoLink: "https://github.com/asabogal/interval-training-timer",
     image: interval_training_timer,
-    url: 'https://interval-training-timer.herokuapp.com/'
+    url: 'https://interval-training-timer.herokuapp.com/',
+    video: 'https://youtu.be/vNy4p2KSsEI'
   }
 ]
