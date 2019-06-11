@@ -1,11 +1,12 @@
 export const footerDiv = {
+  padding: '40px',
   display: 'grid',
   gridTemplateColumns: 'auto auto auto',
   gridAutoRows: 'auto',
   gridColumnGap: '1em',
   alignItems: 'center',
   justifyContent: 'center',
-  zIndex: 1
+  zIndex: 1,
 };
 
 export const footerIcon = {

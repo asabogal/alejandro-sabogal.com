@@ -8,7 +8,7 @@ import linkedin from './Icons/linkedin.png'
 const Footer = () => {
 
   return (
-    <div style={footerDiv}className="footer">
+    <div style={footerDiv}>
       
       <a href="mailto:asabogal.dev@gmail.com">
       <img style={footerIcon} alt="contact me" src={email}></img>
