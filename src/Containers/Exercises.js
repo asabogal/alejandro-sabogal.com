@@ -18,7 +18,7 @@ const Exercises = () => {
   return (
     <div>
        <h1 style={heading}>EXERCISES</h1>
-       <p style={description}>A collection of small web applications intended to practice fundamental and advanced web development skills</p>
+       <p style={description}>A collection of small web applications intended to hone fundamental and advanced front-end development skills</p>
         <div style={projectsContainer}>
          {renderProjects}
         </div>

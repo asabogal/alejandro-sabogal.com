@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from '../Components/Projects/ProjectCard'
 import { projectData } from '../Data/projectData'
-import { projectsContainer, heading } from './styles'
+import { projectsContainer, heading, description } from './styles'
 import Radium from 'radium'
 
 class Portfolio extends React.Component {
@@ -20,7 +20,8 @@ class Portfolio extends React.Component {
       
     return (
      <div>
-       <h1 style={heading}>PERSONAL PROJECTS</h1>
+       <h1 style={heading}>PROJECTS</h1>
+       <p style={description}>Fully functional, front and back end architected applications</p>
         <div style={projectsContainer}>
          {renderProjects}
         </div>
