@@ -7,7 +7,6 @@ import Radium from 'radium'
 const Exercises = () => {
 
   let sorted = exercisesData.sort((a, b) => (a.id > b.id) ? -1 : 1)
-  console.log(sorted)
 
   const renderProjects = sorted.map(project => {
     return (
