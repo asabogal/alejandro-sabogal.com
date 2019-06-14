@@ -1,6 +1,6 @@
 export const projectsContainer = {
   display: 'grid',
-  gridTemplateColumns: '50% 50%',
+  gridTemplateColumns: '40% 40%',
   gridTemplateRows: 'auto auto',
   alignItems: 'center',
   justifyContent: 'center',
@@ -9,7 +9,7 @@ export const projectsContainer = {
   paddingRight: '80px',
   paddingBottom: '40px',
   textAlign: 'center',
-  '@media (max-width: 1000px)': {
+  '@media (max-width: 920px)': {
     gridTemplateColumns: 'auto',
     gridTemplateRows: 'auto'
     

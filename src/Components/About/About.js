@@ -53,7 +53,7 @@ const About = () => {
     </div>
 
     <div>
-      <h1 style={header}>Technologies and Skills I Use</h1>
+      <h1 style={header}>Technologies and Skills, I Use</h1>
     </div>    
 
     <div style={iconsContainer2}>

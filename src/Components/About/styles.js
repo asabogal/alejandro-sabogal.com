@@ -12,6 +12,7 @@ export const pictureContainer = {
 };
 
 export const header = {
+  padding: '0 10px',
   textAlign: 'center',
   color: '#afb9b9'
 }
