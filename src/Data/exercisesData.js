@@ -5,7 +5,7 @@ export const exercisesData = [
   {
     id: 1,
     name: "Pig-Game",
-    description: "Dice Pig Game. An excercise in DOM Manipulation based on Jonas Schmedtmann's course.",
+    description: "Dice Pig Game. An exercise in DOM Manipulation based on Jonas Schmedtmann's course.",
     tools: "Vanilla JavaScript, HTML5, CSS3",
     repoLink: "https://github.com/asabogal/pig-game",
     image: pig_game,
@@ -14,7 +14,7 @@ export const exercisesData = [
   {
     id: 2,
     name: "Memory Cards",
-    description: "Memory Card Game. An excercise in DOM Manipulation based on Marina Ferreira's tutorial.",
+    description: "Memory Card Game. CSS effects and JS DOM exercise based on Marina Ferreira's tutorial.",
     tools: "Vanilla JavaScript, HTML5, CSS3",
     repoLink: "https://github.com/asabogal/memory-game",
     image: memory_game,
