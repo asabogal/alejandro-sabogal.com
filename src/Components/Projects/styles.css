@@ -5,6 +5,7 @@
   height: 95%;
   border-radius: .1em;
   box-shadow: .125em .125em .3125em rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
  .project-img {
   display: block;
