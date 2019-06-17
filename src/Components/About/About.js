@@ -10,6 +10,9 @@ import react from './Images/react.png'
 import js from './Images/js.png'
 import html5 from './Images/html5.png'
 import css3 from './Images/css3.png'
+import redux from './Images/redux.png'
+import sql from './Images/sql.png'
+
 import { pageContainer, pictureContainer, pic, header, textContainer, bigText, smallText, iconsContainer, iconsContainer2 } from './styles'
 import Radium from 'radium'
 
@@ -23,7 +26,7 @@ const About = () => {
 
       <div style={textContainer}>
         <h1 style={bigText}>Hello! I am Alejandro, a Web and Applications Developer based in New York City.</h1>
-        <p style={smallText}>I love programming just as much as I love making music. Both can be beautiful and complex, and I express my creativity when writing both. I'm proficient in Ruby, JavaScript and React, and enjoy building efficient and useful applications. I have professional experience in other fields; Finance, Entrepreneurship, and Audio Engineering. </p>
+        <p style={smallText}>To me, programming is like making music, both can be beautiful and complex, and I express my creativity when writing both. I'm proficient in Ruby, JavaScript and React, and enjoy building efficient and useful applications. I have professional experience in other fields; Finance, Entrepreneurship, and Audio Engineering. </p>
       </div>   
 
       <div>
@@ -65,8 +68,11 @@ const About = () => {
       <div>
           <img src={react}></img> 
           <p>React.js</p>
-        </div>
-
+      </div>
+      <div>
+          <img src={redux}></img> 
+          <p>Redux</p>
+      </div>
        <div>
           <img src={ruby}></img> 
           <p>Ruby</p>
@@ -76,7 +82,10 @@ const About = () => {
           <img src={rails}></img> 
           <p>Rails</p>
         </div>
-
+        <div>
+          <img src={sql}></img> 
+          <p>SQL</p>
+        </div>
         <div>
           <img src={html5}></img> 
           <p>HTML5</p>

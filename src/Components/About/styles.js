@@ -34,7 +34,7 @@ export const iconsContainer2 = {
   display: 'grid',
   alignItems: 'center',
   justifyContent: 'center',
-  gridTemplateColumns: 'auto auto auto auto auto auto',
+  gridTemplateColumns: 'auto auto auto auto auto auto auto auto',
   gridColumnGap: '2em',
   padding: '20px',
   textAlign: 'center',
