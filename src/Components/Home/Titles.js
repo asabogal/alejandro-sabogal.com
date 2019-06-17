@@ -8,7 +8,7 @@ const Titles = () => {
     <div>
       <p style={[titleTop, animations.expandTitle]}>ALEJANDRO SABOGAL</p>
       <div style={animations.fadeTitle}>
-        <h1 style={[titleCenter]}>FULL STACK<br></br> DEVELOPER</h1>
+        <h1 style={titleCenter}>FULL STACK<br></br>DEVELOPER</h1>
         <h4>JavaScript | React | Ruby | Rails</h4>
       </div>
     </div>

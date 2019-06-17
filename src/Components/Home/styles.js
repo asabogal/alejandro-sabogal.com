@@ -13,7 +13,7 @@ export const titleTop = {
 }
 
 export const titleCenter = {
-  fontSize: '80px',
+  fontSize: '60px',
   marginTop: '2px',
   textAlign: 'center',
   '@media (max-width: 700px)': {
