@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
     return (
      <div>
        <h1 style={heading}>PROJECTS</h1>
-       <p style={description}>Fully functional, front and back end architected applications</p>
+       <p style={description}>Fully functional, front and back-end architected applications</p>
         <div style={projectsContainer}>
          {renderProjects}
         </div>
