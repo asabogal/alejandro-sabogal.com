@@ -21,7 +21,7 @@ const About = () => {
     <div style={pageContainer}> 
 
       <div style={pictureContainer}>
-        <img style={pic} src={picture}></img>
+        <img style={pic} src={picture} alt='alejandro'></img>
       </div>
 
       <div style={textContainer}>
@@ -35,22 +35,22 @@ const About = () => {
 
     <div style={iconsContainer}>
        <div>
-          <img src={gradeA}></img> 
+          <img src={gradeA} alt='grade a'></img> 
           <p>Quality Applications</p>
         </div>
 
         <div>
-          <img src={practical}></img> 
+          <img src={practical} alt='practical'></img> 
           <p>Practical and Efficient</p>
         </div>
 
         <div>
-          <img src={precision}></img> 
+          <img src={precision} alt='precision'></img> 
           <p>Precise and Modern Code</p>
         </div>
 
         <div>
-          <img src={passion}></img> 
+          <img src={passion} alt='passion'></img> 
           <p>Built with Passion</p>
         </div>
     </div>
@@ -61,38 +61,38 @@ const About = () => {
 
     <div style={iconsContainer2}>
       <div>
-        <img src={js}></img> 
+        <img src={js} alt='javascript'></img> 
         <p>JavaScript</p>
       </div>
 
       <div>
-          <img src={react}></img> 
+          <img src={react} alt='react'></img> 
           <p>React.js</p>
       </div>
       <div>
-          <img src={redux}></img> 
+          <img src={redux} alt='redux'></img> 
           <p>Redux</p>
       </div>
        <div>
-          <img src={ruby}></img> 
+          <img src={ruby} alt='ruby'></img> 
           <p>Ruby</p>
         </div>
 
         <div>
-          <img src={rails}></img> 
+          <img src={rails} alt='rails'></img> 
           <p>Rails</p>
         </div>
         <div>
-          <img src={sql}></img> 
+          <img src={sql} alt='sql'></img> 
           <p>SQL</p>
         </div>
         <div>
-          <img src={html5}></img> 
+          <img src={html5} alt='html5'></img> 
           <p>HTML5</p>
         </div>
 
         <div>
-          <img src={css3}></img> 
+          <img src={css3} alt='css3'></img> 
           <p>CSS3</p>
         </div>
        

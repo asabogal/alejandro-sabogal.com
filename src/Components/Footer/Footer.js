@@ -14,12 +14,12 @@ const Footer = () => {
       <img style={footerIcon} alt="contact me" src={email}></img>
       </a>
 
-      <a href="https://github.com/asabogal" target="_blank">
-      <img style={footerIcon} src={github}></img>
+      <a href="https://github.com/asabogal" target="_blank" rel="noopener noreferrer">
+      <img style={footerIcon} src={github} alt='github logo'></img>
       </a>
       
-      <a href="http://www.linkedin.com/in/alejandro-sabogal-dev" target="_blank">
-      <img style={footerIcon} src={linkedin}></img>
+      <a href="http://www.linkedin.com/in/alejandro-sabogal-dev" target="_blank" rel="noopener noreferrer">
+      <img style={footerIcon} src={linkedin} alt='linkedin logo'></img>
       </a>
     </div>
   );

@@ -17,7 +17,7 @@ class NavButton extends Component {
   render() {
     return (
       <div>
-        <img style={[button, animations.fadeIcon]} src={navIcon} onClick={this.handleClick}/>
+        <img style={[button, animations.fadeIcon]} src={navIcon} onClick={this.handleClick} alt='nav button'/>
       </div>
     );
   }

@@ -14,7 +14,14 @@ export const button = {
   height: '40px',
   width: '40px',
   padding: '1em',
-};
+}; 
+
+// MENU LIST
+
+export const menuList = {
+  listStyle: 'none',
+  paddingBottom: '20px'
+}
 
 const fadeDown = Radium.keyframes({
   '0%': {
