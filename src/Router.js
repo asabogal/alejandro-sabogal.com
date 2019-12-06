@@ -5,6 +5,7 @@ import AboutPage from './Pages/AboutPage'
 import PortfolioPage from './Pages/PortfolioPage'
 import ResumePage from './Pages/ResumePage'
 import PageNotFound from './Pages/PageNotFound'
+import InProgress from './Pages/InProgress'
 import Helmet from 'react-helmet'
 import 'babel-polyfill'
 import Radium, { StyleRoot } from 'radium';
@@ -24,6 +25,7 @@ const Router = () => {
           <Route exact path= '/about' component={AboutPage}/>
           <Route exact path= '/portfolio' component={PortfolioPage}/>
           <Route exact path= '/resume' component={ResumePage}/>
+          <Route exact path= '/in_progress' component={InProgress}/>
           <Route component={PageNotFound}/>
         </Switch>
       </HashRouter>

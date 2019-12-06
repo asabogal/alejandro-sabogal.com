@@ -2,6 +2,7 @@ import dj_charts from './projectImages/dj-charts.png'
 import recordbox_reviews from './projectImages/recordbox_reviews.png'
 import uefa_schedules from './projectImages/uefa_schedules.png'
 import interval_training_timer from './projectImages/interval_training_timer.png'
+import cryptofolio from './projectImages/cryptofolio_inprogress.png'
 
 export const projectData = [
   
@@ -44,5 +45,15 @@ export const projectData = [
     image: interval_training_timer,
     url: 'https://interval-training-timer.herokuapp.com/',
     video: 'https://youtu.be/vNy4p2KSsEI'
+  },
+  {
+    id: 5,
+    name: "Cryptofolio",
+    description: "[IN PROGRESS] Cryptocurrency Portfolio. Fetches live and historical crypto data.",
+    tools: 'React, Javascript, Styled Components, Ruby on Rails, RESTful API',
+    repoLink: "https://github.com/asabogal/cryptofolio-client",
+    image: cryptofolio,
+    url: '#/in_progress',
+    // video: 'https://youtu.be/vNy4p2KSsEI'
   }
 ]
