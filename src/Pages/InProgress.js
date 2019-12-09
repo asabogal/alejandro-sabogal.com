@@ -1,4 +1,5 @@
 import React from 'react';
+import Radium from 'radium'
 import crypto from './images/cryptofolio_inprogress.png'
 
 const InProgress = () => {
@@ -11,7 +12,7 @@ const InProgress = () => {
   );
 };
 
-export default InProgress;
+export default Radium(InProgress);
 
 const styles = {
   div: {
@@ -22,7 +23,8 @@ const styles = {
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
     opacity: '.7',
-    zIndex: '99'
+    zIndex: '99',
+    
   },
     h1: {
     position: 'absolute',
@@ -32,7 +34,22 @@ const styles = {
     fontSize: '220px',
     lineHeight: '80%',
     zIndex: '0',
-    opacity: '.4'
+    opacity: '.4',
+    '@media (max-width: 1150px)': {
+      top: '20%',
+      fontSize: '160px',
+    },
+    '@media (max-width: 850px)': {
+      top: '30%',
+      fontSize: '100px',
+      paddingLeft: '0px',
+    },
+    '@media (max-width: 450px)': {
+      top: '40%',
+      fontSize: '50px',
+      paddingLeft: '0px',
+       transform: 'rotate(-45deg)',
+    }
     // transform: 'rotate(-45deg)',
   },
     link1: {
