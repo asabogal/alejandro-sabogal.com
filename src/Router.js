@@ -5,7 +5,6 @@ import AboutPage from './Pages/AboutPage'
 import PortfolioPage from './Pages/PortfolioPage'
 import ResumePage from './Pages/ResumePage'
 import PageNotFound from './Pages/PageNotFound'
-import InProgress from './Pages/InProgress'
 import Helmet from 'react-helmet'
 import 'babel-polyfill'
 import Radium, { StyleRoot } from 'radium';
