@@ -49,11 +49,11 @@ export const projectData = [
   {
     id: 5,
     name: "Cryptofolio",
-    description: "[IN PROGRESS] Cryptocurrency Portfolio. Fetches live and historical crypto data.",
+    description: "Cryptocurrency Portfolio Web App. Fetches live and historical crypto data.",
     tools: 'React, Javascript, Styled Components, Ruby on Rails, RESTful API',
-    repoLink: "https://github.com/asabogal/cryptofolio-client",
+    repoLink: 'https://github.com/asabogal/cryptofolio-production',
     image: cryptofolio,
-    url: '#/in_progress',
+    url: 'https://cryptofolio-web-app.herokuapp.com/',
     // video: 'https://youtu.be/vNy4p2KSsEI'
   }
 ]
