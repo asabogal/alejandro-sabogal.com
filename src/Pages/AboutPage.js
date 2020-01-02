@@ -1,5 +1,5 @@
-import React from 'react';
-import About from '../Components/About/About'
+import React from './node_modules/react';
+import About from '../components/about/About'
 import './pages.css'
 
 

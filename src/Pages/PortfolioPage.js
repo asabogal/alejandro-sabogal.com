@@ -1,6 +1,6 @@
-import React from 'react';
-import Portfolio from '../Containers/Portfolio'
-import Exercises from '../Containers/Exercises'
+import React from './node_modules/react';
+import Portfolio from '../containers/Portfolio'
+import Exercises from '../containers/Exercises'
 
 const PortfolioPage = () => {
 

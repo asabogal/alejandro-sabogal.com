@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume from '../Components/Resume/Resume'
+import Resume from '../components/resume/Resume'
 
 const ResumePage = () => {
   return (

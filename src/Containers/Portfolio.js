@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from '../Components/Projects/ProjectCard'
+import ProjectCard from '../components/projects/ProjectCard'
 import { projectData } from '../Data/projectData'
 import { projectsContainer, heading, description } from './styles'
 import Radium from 'radium'

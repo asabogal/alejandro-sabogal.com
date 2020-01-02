@@ -1,6 +1,6 @@
-import React from 'react';
+import React from './node_modules/react';
 import { header } from './styles'
-import Radium from 'radium'
+import Radium from './node_modules/radium'
 import NavMenu from './NavMenu'
 import NavButton from './NavButton'
 import './nav.css'

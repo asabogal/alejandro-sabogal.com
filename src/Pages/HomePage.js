@@ -1,5 +1,5 @@
-import React from 'react';
-import Titles from '../Components/Home/Titles'
+import React from './node_modules/react';
+import Titles from '../components/home/Titles'
 import {HomeContainer} from './PagesContainer';
 
 const HomePage= () => {

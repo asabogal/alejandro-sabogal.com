@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import { button, animations } from './styles'
 import navIcon from './Icons/arrowDown.png'
-import Radium from 'radium'
+import Radium from './node_modules/radium'
  
 class NavButton extends Component {
   constructor(props) {

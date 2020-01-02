@@ -1,4 +1,4 @@
-import Radium from 'radium'
+import Radium from './node_modules/radium'
 
 export const titleTop = {
   fontSize: '30px',
