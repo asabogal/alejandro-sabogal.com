@@ -1,4 +1,4 @@
-import Radium from './node_modules/radium'
+import Radium from 'radium'
 
 // HEADER //
 export const header = {

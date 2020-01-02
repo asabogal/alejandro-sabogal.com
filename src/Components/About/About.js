@@ -1,4 +1,5 @@
-import React from './node_modules/react';
+import React from 'react';
+import Radium from 'radium';
 import picture from './Images/Github Pic.jpg'
 import gradeA from './Images/gradeA.png'
 import practical from './Images/practical.png'
@@ -14,7 +15,6 @@ import redux from './Images/redux.png'
 import sql from './Images/sql.png'
 
 import { pageContainer, pictureContainer, pic, header, textContainer, bigText, smallText, iconsContainer, iconsContainer2 } from './styles'
-import Radium from './node_modules/radium'
 
 const About = () => {
   return (

@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 import Portfolio from '../containers/Portfolio'
 import Exercises from '../containers/Exercises'
 

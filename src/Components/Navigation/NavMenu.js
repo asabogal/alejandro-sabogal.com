@@ -1,8 +1,8 @@
-import React from './node_modules/react';
+import React from 'react';
 import './nav.css'
 import { animations, menuList } from './styles'
-import { Link } from './node_modules/react-router-dom'
-import Radium from './node_modules/radium'
+import { Link } from 'react-router-dom'
+import Radium from 'radium'
 
 const NavMenu = (props) => {
 

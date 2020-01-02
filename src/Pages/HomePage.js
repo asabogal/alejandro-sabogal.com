@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 import Titles from '../components/home/Titles'
 import {HomeContainer} from './PagesContainer';
 

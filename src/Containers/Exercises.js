@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from '../components/projects/ProjectCard'
-import { exercisesData } from '../Data/exercisesData'
+import { exercisesData } from '../data/exercisesData'
 import { projectsContainer, heading, description } from './styles'
 import Radium from 'radium'
 
