@@ -26,6 +26,7 @@ class NavHeader extends React.Component {
     return (
       <div style={header}>
         {this.renderMenu()}
+        {this.props.children}
       </div>
     );
   }
