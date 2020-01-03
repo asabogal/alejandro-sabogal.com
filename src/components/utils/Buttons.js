@@ -9,6 +9,7 @@ export const BurgerButton = (props) => {
         icon={faBars} 
         size={props.size} 
         color={props.color}
+        onClick={props.click}
       />
     </div>
   );
