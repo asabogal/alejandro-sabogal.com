@@ -1,5 +1,5 @@
 import React from 'react';
-import error from '../components/navigation/Icons/error.png'
+import error from '../Images/error.png'
 import { Link } from 'react-router-dom'
 
 const PageNotFound = () => {
