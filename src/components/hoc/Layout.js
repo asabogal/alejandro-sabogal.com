@@ -14,7 +14,13 @@ class Layout extends Component {
   toggleSideNav = () => {
     this.setState(prevState => {
       return {sideOpen: !prevState.sideOpen};
-    })
+    });
+  };
+
+  closeSideNav = () => {
+    this.setState({
+      sideOpen: false
+    });
   };
 
 
@@ -24,7 +30,7 @@ class Layout extends Component {
 
     if (this.state.sideOpen) {
       sideNav = <SideNavigation/>
-      backdrop = <Backdrop/>
+      backdrop = <Backdrop click={this.closeSideNav}/>
     };
 
     return (
