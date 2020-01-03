@@ -6,7 +6,7 @@ const Titles = () => {
   return (
     <Container>
      <h1>ALEJANDRO SABOGAL</h1>
-     <h2>SOFTWARE + WEB DEVELOPER</h2>
+     <h2>SOFTWARE | WEB DEVELOPER</h2>
      <h3>React | JavaScript | Node | Ruby | Rails</h3>
     </Container>
   );

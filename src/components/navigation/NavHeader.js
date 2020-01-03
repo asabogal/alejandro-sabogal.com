@@ -11,6 +11,7 @@ const NavHeader = (props) => {
             <BurgerButton
             size='2x'
             color='#1E4051'
+            click={props.toggleSideNav}
             />
           </div>
           <div>
@@ -20,7 +21,6 @@ const NavHeader = (props) => {
             />
           </div>
       </HeaderContainer>
-      {props.children}
     </div>
   );
 };
