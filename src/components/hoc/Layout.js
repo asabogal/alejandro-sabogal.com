@@ -25,18 +25,15 @@ class Layout extends Component {
 
 
   render() {
-    let sideNav;
     let backdrop;
-
     if (this.state.sideOpen) {
-      sideNav = <SideNavigation/>
       backdrop = <Backdrop click={this.closeSideNav}/>
     };
 
     return (
       <div>
         <NavHeader toggleSideNav={this.toggleSideNav}/>
-        {sideNav}
+        <SideNavigation open={this.state.sideOpen} click={this.closeSideNav}/>
         {backdrop}
         {this.props.children}
       </div>
