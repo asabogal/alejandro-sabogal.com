@@ -68,7 +68,7 @@ export default SideNavigation;
 
 const BtnContainer = styled.div`
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 `;
 
 const Container = styled.section`
@@ -80,15 +80,15 @@ const Container = styled.section`
   position: fixed;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 70%;
   max-width: 300px;
   z-index: 999;
   transform: ${props => props.open ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.15s ease-out;
   section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30px 100px;
     align-items: center;
-    justify-content: space-between;
     padding-left:30px;
     :hover {
       background-color: #1F5061;
@@ -98,6 +98,7 @@ const Container = styled.section`
   a {
     display: block;
     width: 100%;
+    font-size: 20px;
     text-decoration: none;
     color: white;
     padding: 20px;
