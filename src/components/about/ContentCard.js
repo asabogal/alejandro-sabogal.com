@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const ContentCard = (props) => {
   return (
     <CardContainer>
-      <img src={props.image}/>
+      <div>
+        <img src={props.image} alt='code-icon'/>
+      </div>
       <h3>{props.title}</h3>
       <p>{props.paragraph}</p>
     </CardContainer>
@@ -21,8 +23,14 @@ const CardContainer = styled.div`
   align-content: center;
   margin: 50px;
   text-align: center;
-  img {
+  div {
+    width: 120px;
+    height: 120px;
     justify-self: center;
     align-self: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
   }
 `;
