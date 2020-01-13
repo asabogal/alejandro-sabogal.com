@@ -17,6 +17,7 @@ const PictureContainer = styled.div`
   align-items: center;
   justify-content: center;
   grid-template-columns: auto;
+  margin-bottom: 10px;
   img {
     width: 250px;
     height: 250px;
