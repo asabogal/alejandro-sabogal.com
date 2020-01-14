@@ -6,7 +6,7 @@ const Titles = () => {
   return (
     <Container>
      <h1>ALEJANDRO SABOGAL</h1>
-     <h2>SOFTWARE | WEB DEVELOPER</h2>
+     <h2>SOFTWARE <span style={{fontSize: '28px'}}>&</span> WEB DEVELOPER</h2>
      <h3>React | JavaScript | Node | Ruby | Rails</h3>
     </Container>
   );
@@ -15,6 +15,11 @@ const Titles = () => {
 export default Titles;
 
 const Container = styled.div`
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
   h1 {
     font-size: 60px;
     margin-block-start: 0px;
