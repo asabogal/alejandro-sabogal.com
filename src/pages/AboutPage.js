@@ -1,15 +1,31 @@
 import React from 'react';
-import About from '../components/about/About'
-import './pages.css'
-
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
+import ImageHead from '../components/about/ImageHead';
+import Titles from '../components/about/Titles';
+import Content from '../components/about/Content';
+import {MainBtn} from '../components/utils/Buttons';
 
 const AboutPage = () => {
   return (
-    <div className="about-page">
-      <About/>
+    <div>
+      <ImageHead/>
+      <Titles/>
+      <Content/>
+      <BtnContainer>
+        <Link to='/portfolio'>
+          <MainBtn>CHECK IT OUT</MainBtn>
+        </Link> 
+      </BtnContainer>
     </div>
-    
   );
 };
 
 export default AboutPage;
+
+const BtnContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 25px;
+`;
