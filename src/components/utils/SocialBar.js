@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,7 +11,7 @@ const SocialBar = (props) => {
     <Container>
       <a href="https://www.github.com/asabogal">
         <FontAwesomeIcon 
-          icon={faGithub} 
+          icon={faGithubSquare} 
           size={props.size}
           color={props.color} 
         />
