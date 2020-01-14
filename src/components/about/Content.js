@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import frontEnd from '../../Images/about_images/front_end.svg'
 import backEnd from '../../Images/about_images/back_end.svg'
 import ContentCard from './ContentCard';
+import Build from './Build';
 
 const Content = () => {
 
@@ -31,6 +32,7 @@ const Content = () => {
           title={cardContent.backEnd.title}
           paragraph={cardContent.backEnd.paragraph}/>
       </CardsContainer>
+      <Build/>
     </ContentWrapper>
   );
 };
@@ -39,7 +41,7 @@ export default Content;
 
 const ContentWrapper = styled.div`
   display: grid;
-  grid-template-rows: 25px auto;
+  grid-template-rows: 25px auto auto;
   background: #edf1f3;
   h1 {
     text-align: center;
