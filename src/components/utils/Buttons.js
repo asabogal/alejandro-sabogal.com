@@ -30,6 +30,20 @@ export const CloseButton = (props) => {
   );
 };
 
+export const MainBtn = styled.button`
+  background-color: ${(props => props.background || '#edf1f3')};
+  color: ${(props => props.color || '#324955')};
+  font-size: ${(props => props.font || '15px')};
+  height: ${(props => props.height || '40px')};
+  width: ${(props => props.width || '250px')};
+  border: 2px solid #324955;
+  cursor: pointer;
+  &:hover {
+    background-color: #324955;
+    color: #edf1f3;
+}
+`;
+
 const BtnContainer = styled.div`
   cursor: pointer;
 `;
