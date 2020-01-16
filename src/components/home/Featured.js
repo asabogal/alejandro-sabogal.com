@@ -1,22 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
-import image from '../../Images/featured_images/cryptofolio.png'
-import image2 from '../../Images/featured_images/cryptofolio2.png'
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptop, faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
 
-const Featured = ({stack, name, description, link, url, index}) => {
+
+const Featured = ({stack, name, description, link, url, image1, image2, index}) => {
   let left = parseInt(index)
   return (
     <Wrapper left={left}>
-      <Info>
+      <InfoContainer>
         <h2>{stack}</h2>
         <h1>{name}</h1>
         <p>{description}</p>
-        <h4>{link}</h4>
-        <h4>{url}</h4>
-      </Info>
+        <a href={url}>
+          <FontAwesomeIcon
+            style={{marginRight: '10px'}}
+            size='sm'
+            icon={faLaptop}
+          />
+          Launch App
+        </a>
+        <Link to={link}>
+        <FontAwesomeIcon
+          style={{marginRight: '10px'}}
+          size="sm"
+          icon={faProjectDiagram}
+        />
+          View Project
+        </Link>
+      </InfoContainer>
       <ImageContainer>
-        <img className='img-1' src={image2}/>
-        <img className='img-2' src={image}/>
+        <img className='img-2' src={image2}/>
+        <img className='img-1' src={image1}/>
       </ImageContainer>
     </Wrapper>
   );
@@ -30,14 +46,37 @@ const Wrapper = styled.div`
   flex-direction: ${(props => props.left % 2 === 0 ? 'row' : 'row-reverse')};
 `;
 
-const Info = styled.div`
-  flex: 0 1 33%;
+const InfoContainer = styled.div`
+  flex: 0 1 40%;
   display: flex;
   flex-direction: column;
   justify-items: center;
   justify-self: center;
   align-self: center;
   padding: 0 30px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: #909ba1;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h1 {
+    font-weight: 600;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+  }
+
 `;
 
 const ImageContainer = styled.div`
@@ -52,7 +91,7 @@ const ImageContainer = styled.div`
     transform: translate(-40%, -40%); 
     box-shadow: 1px 0px 10px rgba(0,0,0,0.5);
   }
-  .img-1 {
+  .img-2 {
     transform: translate(-55%, -55%);
   }
 `;
