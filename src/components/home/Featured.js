@@ -13,7 +13,7 @@ const Featured = ({stack, name, description, link, url, image1, image2, index}) 
         <h2>{stack}</h2>
         <h1>{name}</h1>
         <p>{description}</p>
-        <a href={url}>
+        <a href={url} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             style={{marginRight: '10px'}}
             size='sm'
