@@ -1,0 +1,23 @@
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+button:after {
+  content: "\0279E";
+  position: absolute;
+  opacity: 0;  
+  transition: 0.3s;
+}
+
+button:hover{
+  padding-right: 10px;
+  padding-left:8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 20px;
+}
