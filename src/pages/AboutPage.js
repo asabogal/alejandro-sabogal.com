@@ -13,8 +13,8 @@ const AboutPage = () => {
       <Titles/>
       <Content/>
       <BtnContainer>
-        <Link to='/portfolio'>
-          <MainBtn>CHECK IT OUT</MainBtn>
+        <Link to='/work'>
+          <MainBtn>VIEW MY WORK</MainBtn>
         </Link> 
       </BtnContainer>
     </div>

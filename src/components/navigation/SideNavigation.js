@@ -42,7 +42,7 @@ const SideNavigation = (props) => {
           color="white"
           icon={faCode}
         />
-        <Link to="/portfolio">PORTFOLIO</Link>
+        <Link to="/work">WORK</Link>
       </section>
       <section onClick={props.click}>
         <FontAwesomeIcon
@@ -75,7 +75,7 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #1E4051;
+  background-color: #324955;
   box-shadow: 1px 0px 10px rgba(0,0,0,0.5);
   position: fixed;
   top: 0;
