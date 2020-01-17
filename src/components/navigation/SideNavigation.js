@@ -42,7 +42,7 @@ const SideNavigation = (props) => {
           color="white"
           icon={faCode}
         />
-        <Link to="/work">WORK</Link>
+        <Link to="/portfolio">PORTFOLIO</Link>
       </section>
       <section onClick={props.click}>
         <FontAwesomeIcon
