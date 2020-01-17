@@ -32,7 +32,7 @@ export const CloseButton = (props) => {
 };
 
 export const MainBtn = styled.button`
-  background-color: ${(props => props.background || '#edf1f3')};
+  background-color: inherit;
   color: ${(props => props.color || '#324955')};
   font-size: ${(props => props.font || '13px')};
   height: ${(props => props.height || '38px')};
