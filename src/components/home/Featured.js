@@ -3,38 +3,42 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptop, faProjectDiagram} from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
 
 
 const Featured = ({stack, name, description, link, url, image1, image2, index}) => {
   let left = parseInt(index)
   return (
-    <Wrapper left={left}>
-      <InfoContainer>
-        <h2>{stack}</h2>
-        <h1>{name}</h1>
-        <p>{description}</p>
-        <a href={url} target="_blank" rel="noopener noreferrer">
+    <Fade>
+      <Wrapper left={left}>
+        <InfoContainer>
+          <h2>{stack}</h2>
+          <h1>{name}</h1>
+          <p>{description}</p>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              style={{marginRight: '10px'}}
+              size='sm'
+              icon={faLaptop}
+            />
+            Launch App
+          </a>
+          <Link to={link}>
           <FontAwesomeIcon
             style={{marginRight: '10px'}}
-            size='sm'
-            icon={faLaptop}
+            size="sm"
+            icon={faProjectDiagram}
           />
-          Launch App
-        </a>
-        <Link to={link}>
-        <FontAwesomeIcon
-          style={{marginRight: '10px'}}
-          size="sm"
-          icon={faProjectDiagram}
-        />
-          View Project
-        </Link>
-      </InfoContainer>
-      <ImageContainer>
-        <img className='img-2' src={image2}/>
-        <img className='img-1' src={image1}/>
-      </ImageContainer>
-    </Wrapper>
+            View Project
+          </Link>
+          </InfoContainer>
+        <ImageContainer>
+          <img className='img-2' src={image2}/>
+          <img className='img-1' src={image1}/>
+        </ImageContainer>
+     </Wrapper>
+    </Fade>
+    
   );
 };
 
@@ -42,7 +46,7 @@ export default Featured;
 
 const Wrapper = styled.div`
   display: flex;
-  height: 90vh;
+  height: 80vh;
   flex-direction: ${(props => props.left % 2 === 0 ? 'row' : 'row-reverse')};
 `;
 
