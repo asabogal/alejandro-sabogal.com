@@ -5,12 +5,25 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ResumePage from './pages/ResumePage';
+import ProjectPage from './pages/ProjectPage';
 import PageNotFound from './pages/PageNotFound';
 import Helmet from 'react-helmet';
 import 'babel-polyfill';
 import Radium, { StyleRoot } from 'radium';
 
 const App = () => {
+
+  const LayoutRoutes = () => (
+    <Layout>
+      <Switch>
+        <Route exact path= '/' component={HomePage}/>
+        <Route exact path= '/about' component={AboutPage}/>
+        <Route exact path= '/work' component={PortfolioPage}/>
+        <Route exact path= '/resume' component={ResumePage}/>
+        <Route component={PageNotFound}/>
+      </Switch>
+    </Layout>
+  )
 
   return (
     <StyleRoot>
@@ -20,15 +33,10 @@ const App = () => {
         <meta name="keywords" cpntent="alejandro, sabogal, alejandro sabogal, web developer, full stack developer, full-stack developer, full stack, full-stack, developer, portfolio" />
       </Helmet>
       <HashRouter basename='/'>
-        <Layout>
-          <Switch>
-              <Route exact path= '/' component={HomePage}/>
-              <Route exact path= '/about' component={AboutPage}/>
-              <Route exact path= '/work' component={PortfolioPage}/>
-              <Route exact path= '/resume' component={ResumePage}/>
-              <Route component={PageNotFound}/>
-          </Switch>
-        </Layout>
+        <Switch>
+          <Route exact path= '/project' component={ProjectPage}/>
+          <Route component={LayoutRoutes}/>
+        </Switch>
       </HashRouter>
     </StyleRoot>
  )
