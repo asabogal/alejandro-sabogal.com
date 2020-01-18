@@ -34,7 +34,7 @@ const App = () => {
       </Helmet>
       <HashRouter basename='/'>
         <Switch>
-          <Route exact path= '/project' component={ProjectPage}/>
+          <Route exact path= '/project/:name' render={props => <ProjectPage {...props}/>}/>
           <Route component={LayoutRoutes}/>
         </Switch>
       </HashRouter>
