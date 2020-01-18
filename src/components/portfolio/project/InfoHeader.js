@@ -4,20 +4,20 @@ import {MainBtn} from '../../utils/Buttons';
 
 const InfoHeader = (props) => {
 
-  const { id, year, repoLink, stack, tools, heading, description, url } = props.projectData
+  const { year, repoLink, stack, tools, heading, description, url } = props.project;
   
   const renderStack = (stack) => {
-    return stack.map(s => {
+    return stack.map((s, i) => {
       return (
-      <p key={id}>{s}</p>
+      <p key={i}>{s}</p>
       );
     });
   }
 
   const renderTools = (tools) => {
-    return tools.map(t => {
+    return tools.map((t, i) => {
       return (
-      <p key={id}>{t}</p>
+      <p key={i}>{t}</p>
       );
     });
   }
@@ -52,7 +52,7 @@ const InfoHeader = (props) => {
       <TextContainer>
         <div><h1>{heading}</h1></div>
         <div><h3>{description}</h3></div>
-        <a href={url}>
+        <a href={url} target="_blank" rel="noopener noreferrer">
           <MainBtn>Launch App</MainBtn>
         </a> 
       </TextContainer>
@@ -65,9 +65,9 @@ export default InfoHeader;
 const HeaderContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 10vh 30px;
+  padding: 18vh 30px;
   text-align: left;
-  height: 45vh;
+  height: 38vh;
   background-color: lightgrey;
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
@@ -78,11 +78,7 @@ const HeaderContainer = styled.div`
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  @media (max-width: 650px) {
-    justify-content: center;;
-  }
-
+  justify-content: center;
   ul {
     list-style: none;
  
@@ -113,7 +109,7 @@ const InfoContainer = styled.div`
 const TextContainer = styled.div`
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  padding-left: 12%;
+  padding: 0 40px;
   @media (max-width: 650px) {
     h1 {
       font-size: 25px;
@@ -122,15 +118,13 @@ const TextContainer = styled.div`
   h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
-    margin-block-start: 3px;
-    margin-block-end: 5px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
   }
   h3 {
     font-weight: 500;
   }
-  button {
+  a {
     align-self: center; 
   }
 `;
