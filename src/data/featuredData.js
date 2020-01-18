@@ -20,7 +20,7 @@ export const featuredData = [
     name: 'Recordbox Reviews',
     description: 'Share, review and organize your vinyl record collection',
     stack: 'Full Stack Web Development | Ruby on Rails',
-    link: '/portfolio/recordbox',
+    link: '/portfolio/recordbox-reviews',
     url :'https://recordbox-reviews.herokuapp.com',
     image1: recordbox,
     image2: recordbox2
