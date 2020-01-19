@@ -38,7 +38,6 @@ export const MainBtn = styled.button`
   height: ${(props => props.height || '38px')};
   width: ${(props => props.width || '180px')};
   border: 2px solid #324955;
-  transition: all 0.3s;
   cursor: pointer;
   &:hover {
     background-color: #324955;
