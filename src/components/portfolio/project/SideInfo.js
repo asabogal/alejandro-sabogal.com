@@ -44,27 +44,32 @@ const SideInfo = (props) => {
           {renderTools(tools)}
         </li>
       </ul>
-     
       <a href={url} target="_blank" rel="noopener noreferrer">
-          <MainBtn>Launch App</MainBtn>
+        <MainBtn>Launch App</MainBtn>
       </a> 
       <a href={repoLink} target="_blank" rel="noopener noreferrer"><strong>Repo</strong></a>
-    </InfoContainer>
+      </InfoContainer>
   );
 };
 
 export default SideInfo;
 
 const InfoContainer = styled.div`
-  display: grid;
-  grid-template-rows: repeat(7, auto);
-  margin: 30px;
-  ul {
+    flex: 0 1 30%;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    margin: 30px;
+    align-self: center;
+    ul {
     padding: 0;
     list-style: none;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
   p {
-    font-size: 16px;
+    font-size: 15px;
     margin-block-start: 5px;
     margin-block-end: 5px;
     margin-inline-start: 0px;
@@ -79,13 +84,22 @@ const InfoContainer = styled.div`
   }
   h3 {
     font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5em
+  }
+  h1 {
+    font-size: 35px;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
   a {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 13px;
     align-self: flex-end;
     display: block;
     color: inherit;
   }
-`;
+  `;
 
