@@ -20,8 +20,9 @@ const Container = styled.div`
   height: 100vh;
   padding: 5vh;
   margin-top: 25px;
-  @media (max-width: 900px){
+  @media (max-width: 1025px){
     flex-direction: column;
+    height: auto;
   }
 `;
 

@@ -21,7 +21,7 @@ const ImageContainer = styled.div`
     vertical-align: middle;
     box-shadow: 10px 0px 20px rgba(0,0,0,0.5);
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1025px) {
     img {
       width: 100%;
       height: auto;
