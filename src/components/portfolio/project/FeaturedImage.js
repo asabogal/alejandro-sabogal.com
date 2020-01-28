@@ -14,11 +14,11 @@ export default FeatureImage;
 const Container = styled.div`
   margin-top: 40px;
   width: 100vw;
-  height: 100vh;
-  box-shadow: 10px 0px 20px rgba(0,0,0,0.5);
+  height: auto;
+  /* box-shadow: 10px 10px 20px rgba(0,0,0,0.5); */
   img {
     width: 100%;
     height: auto;
-    box-shadow: 10px 0px 20px rgba(0,0,0,0.5);
+    /* box-shadow: 10px 0px 20px rgba(0,0,0,0.5); */
   }
 `;
