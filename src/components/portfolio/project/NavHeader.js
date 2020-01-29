@@ -1,6 +1,20 @@
+import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
-const NavHeader = styled.div`
+const NavHeader = () => {
+  return (
+    <NavContainer>
+      <Link to='/portfolio'>
+        <p>Back to Projects <span style={{fontSize: '25px', marginLeft: '10px'}}>&larr;</span></p>
+      </Link>
+    </NavContainer>
+  )
+};
+
+export default NavHeader;
+
+const NavContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   justify-items: flex-end;
@@ -17,6 +31,10 @@ const NavHeader = styled.div`
     text-decoration: none;
     color: inherit;
   }
+  p {
+    font-size: 18px;
+  }
+  span {
+    margin-left:10px
+  }
 `;
-
-export default NavHeader;
