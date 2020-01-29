@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import NavHeader from '../components/portfolio/project/NavHeader';
-import InfoHeader from '../components/portfolio/project/InfoHeader';
-import {Link} from 'react-router-dom';
+import InfoSection from '../components/portfolio/project/InfoSection';
+import FeaturedImage from '../components/portfolio/project/FeaturedImage';
+import Devices from '../components/portfolio/project/Devices';
+import NavFooter from '../components/portfolio/project/NavFooter';
 import {projectData} from '../data/projectData';
 
 class ProjectPage extends Component {
@@ -12,20 +14,21 @@ class ProjectPage extends Component {
 
   render() {
     const path = this.props.match.params.name;
-    const project = projectData.find(data => data.path === path);
+    const currentProject = projectData.find(data => data.path === path);
+    const previousProject = projectData.find(data => data.id === currentProject.id - 1);
+    const nextProject = projectData.find(data => data.id === currentProject.id + 1 );
 
     return (
       <div>
-        <NavHeader>
-          {console.log('this path is;', path)}
-          <Link to='/portfolio'>
-            <p>Back to Projects <span style={{fontSize: '25px', marginLeft: '10px'}}>&larr;</span></p>
-          </Link>
-        </NavHeader>
-        <InfoHeader project={project}/>
+        <NavHeader/>
+        <InfoSection project={currentProject}/>
+        <FeaturedImage image={currentProject.images.featured}/>
+        <Devices image={currentProject.images.devices}/>
+        <NavFooter previousProject={previousProject} nextProject={nextProject}/>
       </div>
     );
   }
 }
 
 export default ProjectPage;
+
