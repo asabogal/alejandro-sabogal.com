@@ -34,12 +34,10 @@ const NavFooter = ({previousProject, nextProject}) => {
             <p>&rarr;</p>
           </div>
         </NavItem>
-    </Link>
-    :
-    <div></div>
+      </Link>
+      :
+      <div></div>
     }
-    
-      
     </Container>
   );
 };
