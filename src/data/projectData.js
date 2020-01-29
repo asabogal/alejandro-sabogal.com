@@ -1,8 +1,20 @@
 import cryptoHome from '../Images/project_images/cryptofolio/home.png';
-import intervalHome from '../Images/project_images/interval/ho';
-import recorboxHome from '../Images/project_images/recordbox/home.png';
+import intervalHome from '../Images/project_images/interval/home.png';
+import recordboxHome from '../Images/project_images/recordbox/home.png';
 import uefaHome from '../Images/project_images/uefa/home.png';
-import djchartsHome from '../Images/project_images/djcharts/home';
+import djchartsHome from '../Images/project_images/djcharts/home.png';
+
+import cryptoFeatured from '../Images/project_images/cryptofolio/featured.png';
+import intervalFeatured from '../Images/project_images/interval/featured.png';
+import recordboxFeatured from '../Images/project_images/recordbox/featured.png';
+import uefaFeatured from '../Images/project_images/uefa/featured.png';
+import djchartsFeatured from '../Images/project_images/djcharts/featured.png';
+
+import cryptoDevices from '../Images/project_images/cryptofolio/devices.png';
+import recordboxDevices from '../Images/project_images/recordbox/devices.png';
+import intervalDevices from '../Images/project_images/interval/devices.png';
+import uefaDevices from '../Images/project_images/uefa/devices.png';
+import djchartsDevices from '../Images/project_images/djcharts/devices.png';
 
 export const projectData = [
   {
@@ -17,7 +29,9 @@ export const projectData = [
     url: 'https://www.youtube.com/watch?v=nwtz3w8ToMg',
     path:'djcharts',
     images: {
-      home: djchartsHome
+      home: djchartsHome,
+      featured: djchartsFeatured,
+      devices: djchartsDevices
     }
   },
   {
@@ -32,7 +46,9 @@ export const projectData = [
     url: 'https://uefa-schedules.herokuapp.com/',
     path: 'uefa-schedules',
     images: {
-      home: uefaHome
+      home: uefaHome,
+      featured: uefaFeatured,
+      devices: uefaDevices
     }
 
   },
@@ -48,7 +64,9 @@ export const projectData = [
     url: 'https://recordbox-reviews.herokuapp.com/',
     path: 'recordbox-reviews',
     images: {
-      home: recorboxHome
+      home: recordboxHome,
+      featured: recordboxFeatured,
+      devices: recordboxDevices
     }
   },
   {
@@ -63,7 +81,9 @@ export const projectData = [
     url: 'https://interval-training-timer.herokuapp.com/',
     path: 'interval-training-timer',
     images: {
-      home: intervalHome
+      home: intervalHome,
+      featured: intervalFeatured,
+      devices: intervalDevices
     }
   },
   {
@@ -78,7 +98,9 @@ export const projectData = [
     url: 'https://cryptofolio-web-app.herokuapp.com/',
     path: 'cryptofolio',
     images: {
-      home: cryptoHome
+      home: cryptoHome,
+      featured: cryptoFeatured,
+      devices: cryptoDevices
     }
   }
 ]
