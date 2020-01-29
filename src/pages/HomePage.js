@@ -4,6 +4,7 @@ import Titles from '../components/home/Titles';
 import Featured from '../components/home/Featured';
 import ToTop from '../components/utils/ToTop';
 import {featuredData} from '../data/featuredData';
+import Fade from 'react-reveal/Fade';
 
 class HomePage extends Component {
   constructor(props) {
@@ -42,7 +43,11 @@ class HomePage extends Component {
     return (
       <div>
         <Titles/> 
-        <h1 style={{textAlign: 'center'}}>Featured Projects</h1>
+        <Fade up>  
+        <Heading>
+          Featured Work
+        </Heading>
+        </Fade>
         <FeaturedContainer>
           {this.renderFeatured(featuredData)}
         </FeaturedContainer>
@@ -61,6 +66,13 @@ export default HomePage;
 const FeaturedContainer = styled.div`
   display: grid;
   grid-template-rows: auto auto;
-  row-gap: 250px;
-  background-color: #eff5f8;
+`;
+
+const Heading = styled.div`
+  font-size: 35px;
+  text-align: center;
+  @media (max-width: 585px) {
+    padding-bottom: 100px;
+    font-size: 30px;
+  }
 `;

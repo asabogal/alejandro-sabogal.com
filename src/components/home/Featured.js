@@ -33,8 +33,8 @@ const Featured = ({stack, name, description, link, url, image1, image2, index}) 
           </Link>
           </InfoContainer>
         <ImageContainer>
-          <img className='img-2' src={image2}/>
-          <img className='img-1' src={image1}/>
+          <img className='img-2' src={image2} alt='project-image1'/>
+          <img className='img-1' src={image1} alt='project-image2'/>
         </ImageContainer>
      </Wrapper>
     </Fade>
@@ -48,6 +48,13 @@ const Wrapper = styled.div`
   display: flex;
   height: 80vh;
   flex-direction: ${(props => props.left % 2 === 0 ? 'row' : 'row-reverse')};
+  @media (max-width: 950px) {
+    flex-direction: column;
+    margin: 40px 0px;
+  }
+  @media (max-width: 575px) {
+    margin-top: 0px;
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -57,7 +64,8 @@ const InfoContainer = styled.div`
   justify-items: center;
   justify-self: center;
   align-self: center;
-  padding: 0 30px;
+  padding: 30px;
+  height: auto;
   h2 {
     text-transform: uppercase;
     font-size: 18px;
@@ -80,14 +88,35 @@ const InfoContainer = styled.div`
     color: inherit;
     margin: 10px;
   }
+  @media (max-width: 720px) {
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 620px) {
+    h1 {
+      font-size: 26px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
 
 `;
 
 const ImageContainer = styled.div`
   flex: 1 1;
   position: relative;
+  height: auto;
   img {
     width: 80%;
+    height: auto;
     max-height: 100%;
     position: absolute;
     top: 50%;
@@ -96,6 +125,31 @@ const ImageContainer = styled.div`
     box-shadow: 1px 0px 10px rgba(0,0,0,0.5);
   }
   .img-2 {
-    transform: translate(-55%, -55%);
+    transform: translate(-60%, -60%);
+  }
+  @media (max-width: 950px) {
+    img {
+      width: auto;
+      max-width: 80%;
+    }
+  }
+  @media (max-width: 650px) {
+    img {
+      width: 75%;
+    }
+  }
+  @media (max-width: 575px) {
+    img {
+      width: 75%;
+      height: auto;
+    }
+  }
+  @media (max-width: 400px) {
+    img {
+      width: 75%;
+      height: auto;
+      top: 35%;
+      left: 50%;
+    }
   }
 `;
