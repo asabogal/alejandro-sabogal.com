@@ -15,10 +15,8 @@ const Container = styled.div`
   margin-top: 40px;
   width: 100vw;
   height: auto;
-  /* box-shadow: 10px 10px 20px rgba(0,0,0,0.5); */
   img {
     width: 100%;
     height: auto;
-    /* box-shadow: 10px 0px 20px rgba(0,0,0,0.5); */
   }
 `;

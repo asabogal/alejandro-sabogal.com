@@ -8,7 +8,7 @@ const NavFooter = ({previousProject, nextProject}) => {
     <Container>
     {
       previousProject !== undefined ? 
-      <Link className='previous' to={'/portfolio/' + previousProject.path}>
+      <Link to={'/portfolio/' + previousProject.path}>
         <NavItem>
         <div>
             <p>&larr;</p>
@@ -27,7 +27,7 @@ const NavFooter = ({previousProject, nextProject}) => {
       <Link to={'/portfolio/' + nextProject.path}>
       <NavItem>
           <section>
-            <p>Next Project</p>
+            <p style={{textAlign: 'right'}}>Next Project</p>
             <h3>{nextProject.name}</h3>
           </section>
           <div>
@@ -57,12 +57,6 @@ const Container = styled.div`
   @media (max-width: 765px) {
     margin: 50px 20px;
   }
-  @media (max-width: 565px) {
-    justify-content: center;
-    .previous {
-      display: none;
-    }
-  }
 `;
 
 const NavItem = styled.div`
@@ -90,6 +84,19 @@ const NavItem = styled.div`
   @media (max-width: 750px) {
     h3 {
       font-size: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    p {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 565px) {
+    h3 {
+      display: none;
     }
   }
 `;

@@ -21,4 +21,9 @@ const Container = styled.div`
     width: 100%;
     height: 400px;
   }
+  @media (max-width: 760px) {
+    img {
+      height: auto;
+    }
+  }
 `;

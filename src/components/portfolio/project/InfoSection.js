@@ -24,6 +24,9 @@ const Container = styled.div`
     flex-direction: column;
     height: auto;
   }
+  @media (max-width: 500px) {
+    padding: 0;
+  }
 `;
 
 
