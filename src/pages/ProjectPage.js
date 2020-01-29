@@ -5,11 +5,23 @@ import FeaturedImage from '../components/portfolio/project/FeaturedImage';
 import Devices from '../components/portfolio/project/Devices';
 import NavFooter from '../components/portfolio/project/NavFooter';
 import {projectData} from '../data/projectData';
+import Fade from 'react-reveal/Fade';
 
 class ProjectPage extends Component {
   constructor(props) {
     super(props);
     this.state = {  };
+  }
+
+  // Refresh projectPage from cache and scroll to top
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.location.pathname !== this.props.location.pathname) {
+      window.location.reload(false);
+    }
+  }
+
+  componentDidMount = () => {
+    window.scroll(0, 0)
   }
 
   render() {
@@ -19,13 +31,21 @@ class ProjectPage extends Component {
     const nextProject = projectData.find(data => data.id === currentProject.id + 1 );
 
     return (
-      <div>
+      <>
         <NavHeader/>
-        <InfoSection project={currentProject}/>
-        <FeaturedImage image={currentProject.images.featured}/>
-        <Devices image={currentProject.images.devices}/>
-        <NavFooter previousProject={previousProject} nextProject={nextProject}/>
-      </div>
+        <Fade up>
+          <InfoSection project={currentProject}/>
+        </Fade>
+        <Fade up>
+          <FeaturedImage image={currentProject.images.featured}/>
+        </Fade>
+        <Fade>
+          <Devices image={currentProject.images.devices}/>
+        </Fade>
+        <Fade up>
+          <NavFooter previousProject={previousProject} nextProject={nextProject}/>
+        </Fade>
+      </>
     );
   }
 }
