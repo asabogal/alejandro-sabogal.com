@@ -58,7 +58,7 @@ const SideNavigation = (props) => {
           color="white"
           icon={faMedium}
         />
-        <a href="https://medium.com/@asabogal">BLOG</a>
+        <a href="https://medium.com/@asabogal" target="_blank" rel="noopener noreferrer">BLOG</a>
       </section>
     </Container>
   );
