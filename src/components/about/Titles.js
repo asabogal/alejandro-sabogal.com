@@ -5,7 +5,7 @@ const Titles = () => {
   return (
     <TitlesContainer>
       <h1>Hello! I am Alejandro, a Web and Applications Developer based in New York City.</h1>
-      <p>To me, programming is like making music, both can be beautiful and complex, and I express my creativity when writing both. I'm proficient in React, JavaScript and Ruby on Rails, and enjoy building efficient and useful applications. I have professional experience in other fields; Finance, Entrepreneurship, and Audio Engineering. </p>
+      <p>To me, programming is like making music, both can be beautiful and complex, and I express my creativity when writing both. I'm proficient in React, JavaScript and Ruby on Rails, and enjoy building efficient and useful software. I have professional experience in other fields; Finance, Entrepreneurship, and Audio Engineering. </p>
     </TitlesContainer>
   );
 };

@@ -42,7 +42,6 @@ export default Content;
 const ContentWrapper = styled.div`
   display: grid;
   grid-template-rows: 25px auto auto;
-  background: #edf1f3;
   h1 {
     text-align: center;
     color: #a0acb3;

@@ -5,10 +5,11 @@ import ImageHead from '../components/about/ImageHead';
 import Titles from '../components/about/Titles';
 import Content from '../components/about/Content';
 import {MainBtn} from '../components/utils/Buttons';
+import Fade from 'react-reveal/Fade';
 
 const AboutPage = () => {
   return (
-    <div>
+    <Fade>
       <ImageHead/>
       <Titles/>
       <Content/>
@@ -16,8 +17,8 @@ const AboutPage = () => {
         <Link to='/portfolio'>
           <MainBtn>VIEW MY WORK</MainBtn>
         </Link> 
-      </BtnContainer>
-    </div>
+      </BtnContainer>      
+    </Fade>
   );
 };
 
