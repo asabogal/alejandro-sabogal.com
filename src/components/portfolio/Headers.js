@@ -78,7 +78,7 @@ const Container = styled.div`
       }
       img {
         visibility: visible;
-        opacity: 0.8;
+        opacity: 0.88;
         height: 58vh;
         @media (max-width: 500px) {
           height: 45vh;
@@ -97,7 +97,7 @@ const Container = styled.div`
       visibility: hidden;
       opacity: 0;
       transition:  visibility 0s, height 0.5s, opacity 0.5s linear;
-      z-index: 999;
+      z-index: 800;
     }
     a {
       text-decoration: none;
