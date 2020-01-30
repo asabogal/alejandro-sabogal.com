@@ -10,7 +10,7 @@ const ExercisesContainer = () => {
   
     const renderExercises = sorted.map(project => {
       return (
-        <ExerciseCard key={project.id} name={project.name} tools={project.tools} url={project.url} image={project.image}/>
+        <ExerciseCard key={project.id} name={project.name} description={project.description} tools={project.tools} url={project.url} image={project.image}/>
       )
     })
 

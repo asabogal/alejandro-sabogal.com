@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {MainBtn} from '../utils/Buttons';
 
-const ExerciseCard = ({name, tools, url, image}) => {
+const ExerciseCard = ({name, tools, description, url, image}) => {
   return (
     <Container>
       <ImageContainer>
@@ -11,6 +11,7 @@ const ExerciseCard = ({name, tools, url, image}) => {
       <InfoContainer>
         <h4>{name}</h4>
         <p>{tools}</p>
+        <p>{description}</p>
         <a href={url} target="_blank" rel="noopener noreferrer">
           <MainBtn width='130px'>View Project</MainBtn>
         </a>
@@ -53,6 +54,10 @@ const InfoContainer = styled.div`
   p {
     font-weight:  500;
     color: #707b81;
+    margin-block-start: 5px;
+    margin-block-end: 8px;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
   }
 `;
 
