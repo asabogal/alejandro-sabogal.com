@@ -16,7 +16,7 @@ const Headers = () => {
         <div>
           <Link to='/portfolio/cryptofolio'>
           <h2>Cryptofolio Web App</h2>
-          <img src={cryptofolio}/>
+          <img src={cryptofolio} alt='crypto-home-page'/>
           </Link>
         </div>
       </Fade>
@@ -24,7 +24,7 @@ const Headers = () => {
         <div>
           <Link to='/portfolio/interval-training-timer'>
           <h2>Interval Training Timer</h2>
-          <img src={interval}/>
+          <img src={interval} alt='interval-home-page'/>
           </Link>
         </div>
       </Fade>
@@ -32,7 +32,7 @@ const Headers = () => {
         <div>
           <Link to='/portfolio/recordbox-reviews'>
           <h2>Recordbox Reviews</h2>
-          <img src={recordbox}/>
+          <img src={recordbox} alt='recordbox-home-page'/>
           </Link>
         </div>
       </Fade>
@@ -40,7 +40,7 @@ const Headers = () => {
         <div>
           <Link to='/portfolio/uefa-schedules'>
           <h2>UEFA Schedules</h2>
-          <img src={uefa}/>
+          <img src={uefa} alt='uefa-home-page'/>
           </Link>
         </div>
       </Fade>
@@ -48,7 +48,7 @@ const Headers = () => {
         <div>
           <Link to='/portfolio/djcharts'>
           <h2>DJ Charts</h2>
-          <img src={djcharts}/>
+          <img src={djcharts} alt='djcharts-home-page'/>
           </Link>
         </div>
       </Fade>
