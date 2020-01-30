@@ -47,10 +47,11 @@ export default Featured;
 const Wrapper = styled.div`
   display: flex;
   height: 80vh;
+  margin-top: 50px;
   flex-direction: ${(props => props.left % 2 === 0 ? 'row' : 'row-reverse')};
   @media (max-width: 950px) {
     flex-direction: column;
-    margin: 40px 0px;
+    margin: 150px 0px;
   }
   @media (max-width: 575px) {
     margin-top: 0px;
@@ -64,7 +65,7 @@ const InfoContainer = styled.div`
   justify-items: center;
   justify-self: center;
   align-self: center;
-  padding: 30px;
+  padding: 0px 30px;
   height: auto;
   h2 {
     text-transform: uppercase;
