@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const MainImage = (props) => {
   return (
     <ImageContainer>
-      <img src={props.image}/>
+      <img src={props.image} alt='project-home-page'/>
     </ImageContainer>
   );
 };

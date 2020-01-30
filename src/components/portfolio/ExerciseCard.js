@@ -6,7 +6,7 @@ const ExerciseCard = ({name, tools, url, image}) => {
   return (
     <Container>
       <ImageContainer>
-        <img src={image} alt='project-image'/>
+        <img src={image} alt='project-home-page'/>
       </ImageContainer>
       <InfoContainer>
         <h4>{name}</h4>
