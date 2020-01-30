@@ -17,7 +17,7 @@ export default ContentCard;
 
 const CardContainer = styled.div`
   display: grid;
-  grid-template-rows: auto 35px auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: auto;
   justify-content: center;
   align-content: center;
