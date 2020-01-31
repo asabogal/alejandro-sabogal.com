@@ -34,7 +34,7 @@ const Container = styled.div`
   justify-content: center;
   text-align: center;
   margin-top: 10vh;
-  margin-bottom: 30vh;
+  margin-bottom: 10vh;
   @media (max-width: 450px) {
     grid-template-columns: 80%;
   }
