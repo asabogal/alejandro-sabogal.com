@@ -65,7 +65,6 @@ const Container = styled.div`
   justify-items: center;
   align-items: center;
   text-align: center;
-  /* width: 100%; */
   margin-bottom: 50vh;
   div {
     position: relative;
@@ -78,7 +77,7 @@ const Container = styled.div`
       }
       img {
         visibility: visible;
-        opacity: 0.88;
+        opacity: 0.9;
         height: 58vh;
         @media (max-width: 500px) {
           height: 45vh;
@@ -87,7 +86,7 @@ const Container = styled.div`
     }
     img {
       position: absolute;
-      height: 20vh;
+      height: 40vh;
       width: auto;
       top: 50%;
       left: 50%;
@@ -96,7 +95,7 @@ const Container = styled.div`
       border-radius: 1%;
       visibility: hidden;
       opacity: 0;
-      transition:  visibility 0s, height 0.5s, opacity 0.5s linear;
+      transition:  visibility 0.3s, height 0.5s, opacity 0.5s linear;
       z-index: 800;
     }
     a {
@@ -108,6 +107,7 @@ const Container = styled.div`
     font-size: 5rem;
     font-weight: 700;
     letter-spacing: -.3rem;
+    transition: opacity 0.5s linear;
   }
 
   @media(max-width: 980px) {
