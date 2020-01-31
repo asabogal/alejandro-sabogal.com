@@ -25,17 +25,12 @@ const Container = styled.div`
   text-align: center;
   h1 {
     font-size: 60px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-bottom: -4px;
   }
   h2 {
     font-size: 32px;
-    margin-block-start: 5px;
-    margin-block-end: 5px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-top: -4px;
+    margin-bottom: -6px;
   }
   @media (max-width: 720px) {
     h1 {
@@ -56,9 +51,6 @@ const Container = styled.div`
   @media (max-width: 520px) {
     h1 {
       font-size: 38px;
-      margin-block-end: 5px;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
     }
     h2, h3 {
       font-size: 16px;
@@ -73,6 +65,9 @@ const Container = styled.div`
     }
     h2, h3 {
       font-size: 16px;
+    }
+    h3 {
+      font-size: 14px;
     }
   }
 `;
