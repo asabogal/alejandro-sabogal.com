@@ -29,4 +29,5 @@ const BtnContainer = styled.div`
   justify-content: center;
   align-content: center;
   margin: 25px;
+  padding-bottom: 50px;
 `;

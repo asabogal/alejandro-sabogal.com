@@ -12,16 +12,11 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {  };
-    this.myref = React.createRef();
   }
 
   arrowClickHandler = () => {
     window.scroll({top: 0, left: 0, behavior: 'smooth' })
   };
-
-  // scroll(ref) {
-  //   ref.current.scrollIntoView({behavior: 'smooth'})
-  // }
 
   renderFeatured = (featuredData) => {
     return featuredData.map((project, index) => {
@@ -58,11 +53,10 @@ class HomePage extends Component {
             <MainBtn height='45px' font='14px'>Portfolio</MainBtn>
           </Link>
         </ButtonContainer>
-
         <ToTop
-          size='1x'
+          size='1x' 
           click={this.arrowClickHandler}
-        />
+        /> 
       </div>
     );
   }
@@ -81,6 +75,7 @@ const ButtonContainer = styled.div`
   justify-content: center;
   align-content: center;
   margin-bottom: 80px;
+  padding-bottom: 50px;
   @media(max-width: 980px) {
     margin-bottom: 50px;
   }
