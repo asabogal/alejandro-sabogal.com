@@ -52,8 +52,15 @@ const Container = styled.div`
     text-decoration: none;
     color: #324955; 
   }
+  @media (max-width: 980px) {
+    margin: 80px 20px;
+  }
+
   @media (max-width: 765px) {
-    margin: 50px 20px;
+    margin: 50px 10px 80px 10px;
+  }
+  @media (max-width: 500px) {
+    margin: 80px 10px;
   }
 `;
 
@@ -79,12 +86,14 @@ const NavItem = styled.div`
     font-size: 25px;
   }
   
-  @media (max-width: 750px) {
+  @media (max-width: 780px) {
+    margin: 80px 0px;
     h3 {
       font-size: 20px;
     }
   }
   @media (max-width: 600px) {
+    margin: 30px 0px;
     p {
       font-size: 14px;
     }
@@ -93,6 +102,7 @@ const NavItem = styled.div`
     }
   }
   @media (max-width: 565px) {
+    grid-template-rows: 14px 18px;
     h3 {
       display: none;
     }
