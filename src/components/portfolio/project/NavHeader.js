@@ -5,8 +5,11 @@ import {Link} from 'react-router-dom';
 const NavHeader = () => {
   return (
     <NavContainer>
+      <Link to='/'>
+        <p>Home</p>
+      </Link>
       <Link to='/portfolio'>
-        <p>Back to Projects <span style={{fontSize: '25px', marginLeft: '10px'}}>&larr;</span></p>
+        <p><span>&larr;</span> Back to Portfolio </p>
       </Link>
     </NavContainer>
   )
@@ -16,25 +19,22 @@ export default NavHeader;
 
 const NavContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
-  justify-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
+  padding: 0px 30px;
   height: 30px;
-  width: 100vw;
-  padding: 0px 40px;
-  font-size: 14px;
-  background-color: #edf1f3;
   a {
     text-decoration: none;
     color: inherit;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
   }
   span {
-    margin-left:10px
+    margin-right:8px;
+    font-size: 18px;
+    transition:  visibility 0.2s linear;
   }
 `;

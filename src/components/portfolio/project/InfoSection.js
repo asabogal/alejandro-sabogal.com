@@ -17,9 +17,8 @@ export default InfoSection;
 
 const Container = styled.div`
   display: flex;
-  height: 100vh;
-  padding: 5vh;
-  margin-top: 25px;
+  height: auto;
+  padding: 5px 5vh;
   @media (max-width: 1025px){
     flex-direction: column;
     height: auto;
