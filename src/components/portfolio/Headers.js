@@ -20,7 +20,7 @@ const Headers = () => {
           </Link>
         </div>
       </Fade>
-      <Fade up>
+      <Fade >
         <div>
           <Link to='/portfolio/interval-training-timer'>
           <h2>Interval Training Timer</h2>
@@ -28,7 +28,7 @@ const Headers = () => {
           </Link>
         </div>
       </Fade>
-      <Fade up>
+      <Fade >
         <div>
           <Link to='/portfolio/recordbox-reviews'>
           <h2>Recordbox Reviews</h2>
@@ -36,7 +36,7 @@ const Headers = () => {
           </Link>
         </div>
       </Fade>
-      <Fade up>
+      <Fade >
         <div>
           <Link to='/portfolio/uefa-schedules'>
           <h2>UEFA Schedules</h2>
@@ -44,7 +44,7 @@ const Headers = () => {
           </Link>
         </div>
       </Fade>
-      <Fade up>
+      <Fade >
         <div>
           <Link to='/portfolio/djcharts'>
           <h2>DJ Charts</h2>
