@@ -25,10 +25,6 @@ class ProjectPage extends Component {
     window.scrollTo(0, 0);
   }
 
-  // componentDidUpdate = () => {
-  //   window.scrollTo(0, 0); 
-  // }
-
   render() {
     const path = this.props.match.params.name;
     const currentProject = projectData.find(data => data.path === path);
