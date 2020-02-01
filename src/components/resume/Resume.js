@@ -3,7 +3,7 @@ import './styles.css'
 
 const Resume = () => {
 
-  const samplePDF = './AlejandroSabogal_FrontEndDevResume.pdf'
+  const samplePDF = './AlejandroSabogal-SoftwareDevResume.pdf'
 
   return (
     <div className="resume-container">

@@ -1,7 +1,7 @@
 .resume-container {
   display: grid;
   justify-items: center;
-  height: 1000px;
+  height: 100vh;
 }
 
 .resume {
