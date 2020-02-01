@@ -16,13 +16,18 @@ class ProjectPage extends Component {
   // Refresh projectPage from cache and scroll to top
   componentWillReceiveProps(nextProps) {
     if (nextProps.location.pathname !== this.props.location.pathname) {
-      window.location.reload(false);
+      window.location.reload();
+      window.scrollTo(0, 0);
     }
   }
 
-  componentDidMount = () => {
-    window.scroll(0, 0)
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
+
+  // componentDidUpdate = () => {
+  //   window.scrollTo(0, 0); 
+  // }
 
   render() {
     const path = this.props.match.params.name;
@@ -33,18 +38,12 @@ class ProjectPage extends Component {
     return (
       <>
         <NavHeader/>
-        <Fade up>
+        <Fade>
           <InfoSection project={currentProject}/>
         </Fade>
-        <Fade up>
           <FeaturedImage image={currentProject.images.featured}/>
-        </Fade>
-        <Fade>
           <Devices image={currentProject.images.devices}/>
-        </Fade>
-        <Fade up>
           <NavFooter previousProject={previousProject} nextProject={nextProject}/>
-        </Fade>
       </>
     );
   }

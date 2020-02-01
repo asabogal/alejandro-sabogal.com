@@ -13,13 +13,13 @@ class PortfolioPage extends Component {
 
   // Refresh projectPage from cache and scroll to top
   componentWillReceiveProps(nextProps) {
-    if (nextProps.location.pathname !== this.props.location.pathname) {
+    if (nextProps.location.pathname !== this.props.location.pathname) { 
       window.location.reload(false);
     }
   }
 
-  componentDidMount = () => {
-    window.scroll(0, 0)
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
 
   // scroll to top arrow functionality
@@ -40,7 +40,7 @@ class PortfolioPage extends Component {
       <Container>
         <Title
           title="Front End Exercises"
-          description="A collection of small web applications intended to hone fundamental and advanced front-end development skills"
+          description="A collection of small web applications sharpening fundamental and advanced front-end development skills"
           />
         <Excercises/>
       </Container>
