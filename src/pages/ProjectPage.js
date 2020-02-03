@@ -4,6 +4,7 @@ import InfoSection from '../components/portfolio/project/InfoSection';
 import FeaturedImage from '../components/portfolio/project/FeaturedImage';
 import Devices from '../components/portfolio/project/Devices';
 import NavFooter from '../components/portfolio/project/NavFooter';
+import Footer from '../components/navigation/Footer';
 import {projectData} from '../data/projectData';
 import Fade from 'react-reveal/Fade';
 
@@ -40,6 +41,7 @@ class ProjectPage extends Component {
           <FeaturedImage image={currentProject.images.featured}/>
           <Devices image={currentProject.images.devices}/>
           <NavFooter previousProject={previousProject} nextProject={nextProject}/>
+          <Footer/>
       </>
     );
   }
