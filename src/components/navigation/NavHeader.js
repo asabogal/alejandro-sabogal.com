@@ -7,19 +7,17 @@ const NavHeader = (props) => {
   return (
     <div>
       <HeaderContainer>
-          <div>
-            <BurgerButton
-            size='2x'
-            color='#1E4051'
-            click={props.toggleSideNav}
-            />
-          </div>
-          <div>
-            <SocialBar
-            size='2x'
-            color='#1E4051'
-            />
-          </div>
+        <MenuButton onClick={props.toggleSideNav}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </MenuButton>
+        <div>
+          <SocialBar
+          size='1.5x'
+          color='#1E4051'
+          />
+        </div>
       </HeaderContainer>
     </div>
   );
@@ -34,4 +32,21 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-content: center;
   padding: 30px;
+`;
+
+const MenuButton = styled.div`
+  cursor: pointer;
+  div {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  } 
+  &:hover {
+    div {
+      height: 3px;
+      margin: 7px 0;
+    }
+  }
 `;
