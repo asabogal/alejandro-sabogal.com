@@ -28,7 +28,7 @@ const App = () => {
     <>
       <Helmet>
         <title>Alejandro Sabogal</title>
-        <meta name="description" content="My Personal Portfolio Site" />
+        <meta name="description" content="Software and Web Developer. Work Portfolio Site." />
         <meta name="keywords" cpntent="alejandro, sabogal, alejandro sabogal, web developer, full stack developer, full-stack developer, full stack, full-stack, developer, portfolio" />
       </Helmet>
       <BrowserRouter>
