@@ -51,6 +51,6 @@ const ArrowContainer = styled.div`
   padding: 15px 22px;
   background-color: lightgray;
   @media (max-width: 420px) {
-    padding: 15px 15px;
+    padding: 15px 20px;
   }
 `;
