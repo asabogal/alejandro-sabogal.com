@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavHeader from '../navigation/NavHeader';
 import SideNavigation from '../navigation/SideNavigation';
+import Footer from '../navigation/Footer';
 import {Backdrop} from '../shared_styled/SharedStyles';
 
 class Layout extends Component {
@@ -36,6 +37,7 @@ class Layout extends Component {
         <SideNavigation open={this.state.sideOpen} click={this.closeSideNav}/>
         {backdrop}
         {this.props.children}
+        <Footer/>
       </div>
     );
   };
