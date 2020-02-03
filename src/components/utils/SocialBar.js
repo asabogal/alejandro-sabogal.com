@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const SocialBar = (props) => {
 
@@ -11,7 +11,7 @@ const SocialBar = (props) => {
     <Container>
       <a href="https://www.github.com/asabogal">
         <FontAwesomeIcon 
-          icon={faGithubSquare} 
+          icon={faGithub} 
           size={props.size}
           color={props.color} 
         />
@@ -19,7 +19,7 @@ const SocialBar = (props) => {
 
       <a href="https://www.linkedin.com/in/alejandro-sabogal-dev">
         <FontAwesomeIcon 
-          icon={faLinkedin} 
+          icon={faLinkedinIn} 
           size={props.size}
           color={props.color} 
         />
@@ -27,7 +27,7 @@ const SocialBar = (props) => {
 
       <a href="mailto:asabogal.dev@gmail.com">
         <FontAwesomeIcon 
-          icon={faEnvelopeSquare} 
+          icon={faEnvelope} 
           size={props.size}
           color={props.color} 
         />
@@ -43,7 +43,7 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
   a {
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
   }
 `;
