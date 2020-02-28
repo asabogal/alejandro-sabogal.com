@@ -15,7 +15,7 @@ const Headers = () => {
       <Fade up>
         <div>
           <Link to='/portfolio/cryptofolio'>
-          <h2>Cryptofolio Web App</h2>
+          <h2>Cryptofolio Tracker</h2>
           <img src={cryptofolio} alt='crypto-home-page'/>
           </Link>
         </div>

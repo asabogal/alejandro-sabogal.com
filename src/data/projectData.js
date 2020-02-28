@@ -43,7 +43,7 @@ export const projectData = [
     stack: ['JavaScript', 'Ruby on Rails API'],
     tools: ['JQuery', 'Bootstrap','Postman', 'Postgres', 'Faraday', 'Heroku'],
     repoLink: "https://github.com/asabogal/UEFA-schedules",
-    url: 'https://uefa-schedules.herokuapp.com/',
+    url: 'http://www.uefa-schedules.com',
     path: 'uefa-schedules',
     images: {
       home: uefaHome,
@@ -61,7 +61,7 @@ export const projectData = [
     stack: ['Ruby on Rails'],
     tools: ['Bootstrap', 'CCS Grid', 'Bcrypt', 'Facebook SDK', 'Google Cloud', 'Postgres', 'Heroku'],
     repoLink: "https://github.com/asabogal/recordbox-reviews",
-    url: 'https://recordbox-reviews.herokuapp.com/',
+    url: 'http://www.recordbox-reviews.com',
     path: 'recordbox-reviews',
     images: {
       home: recordboxHome,
@@ -78,7 +78,7 @@ export const projectData = [
     stack: ['React', 'Ruby on Rails API'],
     tools: ['Redux', 'Redux Thunk', 'Reactstrap', 'Postgres', 'Heroku'],
     repoLink: "https://github.com/asabogal/interval-training-timer",
-    url: 'https://interval-training-timer.herokuapp.com/',
+    url: 'http://www.interval-training-timer.com',
     path: 'interval-training-timer',
     images: {
       home: intervalHome,
@@ -89,13 +89,13 @@ export const projectData = [
   {
     id: 5,
     year: 2019,
-    name: 'Cryptofolio',
-    heading: 'Track your favorite crypto-coins with the Cryptofolio Web App',
+    name: 'Cryptofolio Tracker',
+    heading: 'Track your favorite crypto-coins with the Cryptofolio Tracker',
     description: 'User authenticated, cryptocurrency portfolio manager. Fetches real-time and historical data using async/await and back-end serializers. User friendly experience with Styled Components. State management through React Context API.',
     stack: ['React', 'JavaScript', 'Ruby on Rails API'],
     tools: ['React Context', 'Styled Components', 'React High Charts', 'Postgres', 'Bcrypt', 'CryptoCompare API', 'Heroku'],
     repoLink: 'https://github.com/asabogal/cryptofolio-production',
-    url: 'https://cryptofolio-web-app.herokuapp.com/',
+    url: 'http://www.cryptofolio-tracker.com',
     path: 'cryptofolio',
     images: {
       home: cryptoHome,
