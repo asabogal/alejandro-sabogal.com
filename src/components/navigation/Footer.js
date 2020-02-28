@@ -9,10 +9,10 @@ const Footer = () => {
       </div>
       <SocialFooter>
         <a href="https://www.github.com/asabogal" target="_blank" rel="noopener noreferrer"> 
-         <p>Git Hub</p>
+         <p>GitHub</p>
         </a>
         <a href="https://www.linkedin.com/in/alejandro-sabogal-dev" target="_blank" rel="noopener noreferrer">
-          <p>Linked In</p>
+          <p>LinkedIn</p>
         </a>  
         <a href="mailto:asabogal.dev@gmail.com">
           <p>Contact Me</p>
